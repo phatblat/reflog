@@ -17,7 +17,7 @@ The exercise here is to get a copy of just the images from my blog. Not terribly
 
 ## The Code
 
-<script src="https://gist.github.com/phatblat/a5caa3bb3a3784f03000.js"></script>
+{% gist a5caa3bb3a3784f03000 sparse_checkout.sh [options] %}
 
 I'm going to walk through this script with the lines a bit out of order; variables will be interspersed with the code that uses them. I generally build scripts with all the variables at the top to make it easy to see what can be tweaked, but having them inline makes the logic easier to follow.
 

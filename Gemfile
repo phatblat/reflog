@@ -9,5 +9,6 @@ group :jekyll_plugins do
   gem 'octopress-image-tag'
   gem 'octopress-codeblock'
   gem 'octopress-codefence'
-	gem 'octopress-solarized'
+  gem 'octopress-gist'
+  gem 'octopress-solarized'
 end

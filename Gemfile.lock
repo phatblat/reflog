@@ -76,6 +76,8 @@ GEM
       octopress-hooks (~> 2.0)
       rubypants-unicode
       titlecase
+    octopress-gist (1.3.5)
+      octopress-code-highlighter (~> 4.2)
     octopress-hooks (2.6.1)
       jekyll (>= 2.0)
     octopress-image-tag (1.1.0)
@@ -127,6 +129,7 @@ DEPENDENCIES
   octopress (~> 3.0.0)
   octopress-codeblock
   octopress-codefence
+  octopress-gist
   octopress-image-tag
   octopress-solarized
 

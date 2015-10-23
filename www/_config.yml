@@ -22,4 +22,5 @@ gems:
   - octopress-image-tag
   - octopress-codeblock
   - octopress-codefence
+  - octopress-gist
   - octopress-solarized
