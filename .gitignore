@@ -3,3 +3,4 @@
 # Jekyll
 .sass-cache
 .jekyll-metadata
+www/.*-cache
