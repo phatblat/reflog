@@ -55,6 +55,8 @@ GEM
       octopress-hooks (~> 2.0)
     octopress-hooks (2.6.1)
       jekyll (>= 2.0)
+    octopress-image-tag (1.1.0)
+      jekyll
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
@@ -78,6 +80,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   octopress (~> 3.0.0)
+  octopress-image-tag
 
 BUNDLED WITH
    1.10.6
