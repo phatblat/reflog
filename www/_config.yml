@@ -12,7 +12,14 @@ github_username:  phatblat
 
 # Build settings
 markdown: kramdown
+kramdown:
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: list
+    coderay_css: class
 
 gems:
   - octopress-image-tag
+  - octopress-codeblock
   - octopress-codefence
+  - octopress-solarized
