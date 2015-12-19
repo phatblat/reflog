@@ -10,6 +10,9 @@ simple_search: http://google.com/search
 twitter_username: phatblat
 github_username:  phatblat
 
+# Serving
+port: 4000
+
 # Build settings
 markdown: kramdown
 kramdown:
