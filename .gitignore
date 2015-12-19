@@ -4,3 +4,4 @@
 .sass-cache
 .jekyll-metadata
 www/.*-cache
+.gist-cache
