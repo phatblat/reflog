@@ -4,7 +4,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 title: phatblat's reflog
 description: > # this means to ignore newlines until "baseurl:"
   a few SHAs from a journey through code
-email: ben@octop.ad
+email: #ben@octop.ad
 author: Ben Chatelain
 simple_search: http://google.com/search
 twitter_username: phatblat
