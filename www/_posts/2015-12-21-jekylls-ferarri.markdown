@@ -46,7 +46,9 @@ The only point I had trouble with was previewing the site using `bundle exec jek
 
 Now that it's live on Octopress 3, this site doesn't look as nice. It's just using a default Jekyll theme. There are a ton of themes out there for Octopress 2, but since 3 isn't finished there aren't a lot of people using it yet or making themes for it. Hopefully, it will be easy to adapt a Jekyll theme.
 
-Oh well, ship it!
+Oh well...
+
+![SHIP IT!](/images/shipit.png)
 
 # References
 
