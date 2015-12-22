@@ -17,11 +17,11 @@ To deploy, you'd run `rake generate && rake deploy` which generates the static c
 
 ## V3
 
-Much improved over a fancy [Rakefile]()(https://github.com/phatblat/phatblat.github.io.bak/blob/source/Rakefile), Octopress 3 is a collection of gems.
+Much improved over a fancy [Rakefile](https://github.com/phatblat/phatblat.github.io.bak/blob/source/Rakefile), Octopress 3 is a collection of gems.
 
 ###  CLI
 
-The [CLI commands]()(https://github.com/octopress/octopress#octopress-cli-commands) are more intuitive:
+The [CLI commands](https://github.com/octopress/octopress#octopress-cli-commands) are more intuitive:
 
 octopress new post "Jekyll's Ferarri"
 git commit -am "Add 'Jekyll's Ferarri' post"
@@ -41,7 +41,7 @@ Now, instead of creating your blog from a fork of the framework used to generate
 The migration process is actually fairly straight-forward and has been detailed very well at:
 http://samwize.com/2015/09/30/migrating-octopress-2-to-octopress-3
 
-The only point I had trouble with was previewing the site using `bundle exec jekyll serve`. I got all kinds of [build warnings]()(https://github.com/benbalter/wordpress-to-jekyll-exporter/issues/37) about missing layouts. It certainly seemed like a path issue, but digging through the config and sass source I couldn't find anything obviously wrong. Turns out the issue is that this Jekyll command _must be run from inside the [**www**]()(https://github.com/phatblat/reflog/tree/master/www) directory_.
+The only point I had trouble with was previewing the site using `bundle exec jekyll serve`. I got all kinds of [build warnings](https://github.com/benbalter/wordpress-to-jekyll-exporter/issues/37) about missing layouts. It certainly seemed like a path issue, but digging through the config and sass source I couldn't find anything obviously wrong. Turns out the issue is that this Jekyll command _must be run from inside the [**www**](https://github.com/phatblat/reflog/tree/master/www) directory_.
 
 # Theme
 
