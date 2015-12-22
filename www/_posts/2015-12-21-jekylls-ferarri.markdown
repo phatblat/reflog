@@ -5,9 +5,7 @@ date: 2015-12-21T17:37:11-07:00
 categories: octopress jekyll blogging
 ---
 
-# Jekyll's Ferarri
-
-I've finally gotten around to converting this blog over to Octopress 3. The last hangup was the silliest issue. I was running the commands in the wrong directory.
+I've finally gotten around to converting this blog over to [Octopress 3](http://octopress.org). The last hangup was the silliest issue. I was running the commands in the wrong directory.
 
 # Octopress 2 vs. 3
 
