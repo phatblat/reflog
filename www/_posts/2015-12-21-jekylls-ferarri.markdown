@@ -1,6 +1,7 @@
 ---
 title: Jekyll's Ferarri
 date: 2015-12-21T17:37:11-07:00
+categories: octopress jekyll blogging
 ---
 
 # Jekyll's Ferarri
