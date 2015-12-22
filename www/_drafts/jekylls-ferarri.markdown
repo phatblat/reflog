@@ -35,7 +35,7 @@ Now, instead of creating your blog from a fork of the framework used to generate
 
 # Migration
 
-The migration process is actually fairly straight-forward and has been detailed very well at: 
+The migration process is actually fairly straight-forward and has been detailed very well at:
 http://samwize.com/2015/09/30/migrating-octopress-2-to-octopress-3
 
 The only point I had trouble with was previewing the site using `bundle exec jekyll serve`. I got all kinds of [build warnings]()(https://github.com/benbalter/wordpress-to-jekyll-exporter/issues/37) about missing layouts. It certainly seemed like a path issue, but digging through the config and sass source I couldn't find anything obviously wrong. Turns out the issue is that this Jekyll command _must be run from inside the [**www**]()(https://github.com/phatblat/reflog/tree/master/www) directory_.
@@ -53,4 +53,3 @@ Now that it's live on Octopress 3, this site doesn't look as nice. It's just usi
 - http://samwize.com/2015/09/30/migrating-octopress-2-to-octopress-3
 - http://decomplecting.org/blog/2015/05/16/hello-octopress-3-0
 - https://lauris.github.io/blogging/2014/08/16/jekyll-vs-octopress
-
