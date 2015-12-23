@@ -35,7 +35,7 @@ markdown: kramdown
 kramdown:
   use_coderay: true
   coderay:
-    coderay_line_numbers: list
+    coderay_line_numbers: nil
     coderay_css: class
 
 gems:
