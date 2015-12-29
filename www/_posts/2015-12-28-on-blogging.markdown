@@ -25,7 +25,7 @@ The main thing that I _really_ want out of this blog is to get better at writing
 
 So, at least for a while, I'm not going to try very hard or create some super intense Swift compiler-level technical posts. I'm not going to talk about iOS APIs for a while. I'm just going to write. I'm going to write whatever is on my mind and I'm not going to care who's listening. There are plenty of cat GIFs out there on the internet if I start boring you. Oh, look! Here's one:
 
-![](Image%2012-28-15,%2010-15%20PM.png "Cat GIF")
+![](/images/cat.gif "Cat GIF")
 
 I want to write more often and lowering the bar on difficulty should help with this. Once I get my writing frequency up and post creation time down, then I'll start working on some harder subjects.
 
