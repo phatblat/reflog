@@ -2,7 +2,6 @@
 
 # Octopress
 .deploy
-_deploy.yml
 
 # Jekyll
 .*-cache
