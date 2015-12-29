@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Blogging"
+title: "On Blogging"
 date: 2015-12-28T22:34:31-07:00
 categories: blogging
 ---
-
-# Blogging
 
 ## Original Intent
 
