@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Blogging"
+date: 2015-12-28T22:34:31-07:00
 categories: blogging
 ---
 
@@ -18,7 +19,7 @@ In almost 2 years I've written 5 blog posts. I didn't really have a goal for pos
 
 ## New Approach
 
-It's (almost) a new year and I've had some big changes (more on this later) and I've just [rebooted this blog]({% post_url /subdir/octopress/jekyll/blogging/2015-12-21-jekylls-ferarri %}). Might as well rethink my approach.
+It's (almost) a new year and I've had some big changes (more on this later) and I've just [rebooted this blog]({% post_url 2015-12-21-jekylls-ferarri %}). Might as well rethink my approach.
 
 The main thing that I _really_ want out of this blog is to get better at writing **about** software. In order to do that, I need to get better at writing words. I write enough code; that's covered. Once the words come together, it's pretty easy to whip up some code to go with a post, especially with Xcode Playgrounds these days.
 
