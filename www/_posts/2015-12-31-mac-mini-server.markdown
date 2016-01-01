@@ -6,9 +6,9 @@ date: 2015-12-31T15:08:32-07:00
 
 ## Traveling without a Mac
 
-My family and I traveled for Christmas and this year I left the MacBook behind, bringing only iPads and iPhones.
+My family and I traveled for Christmas this year I managed to leave the MacBook behind, bringing only iPads and iPhones on the trip.
 
-![](ipad-sizes.jpg)
+![](/images/ipad-sizes.jpg "iPhone 5s (left), iPad mini 2 (center), iPad Pro with Smart Keyboard (right)")
 
 Wile on the road, there are two things that I wanted to do which I wasn't able to on my iPad Pro:
 
@@ -21,13 +21,13 @@ I attempted to do #1 on a Linux server at my web hosting provider, but was quick
 
 It would be nice to access a Mac remotely for these purposes. For security reasons, I do not want to expose my home iMac to the Internet, so a dedicated box is preferred.
 
-These issues are not critical, but they got me thinking that this "leave the Mac at home" approach isn't going to work if I'm going to do any development. With [Git2Go](http://git2go.com) and [Working Copy](http://workingcopyapp.com), I can commit changes directly to git, but I can't compile or test them without a Mac. I want to take my iPad Pro everywhere, but I don't want to _also_ bring the MacBook. That defeats the purpose of bringing the iPro.
+These issues are not critical, but they got me thinking that this "leave the Mac at home" approach isn't going to work if I'm going to do any development. With [Git2Go](http://git2go.com) and [Working Copy](http://workingcopyapp.com), I can commit changes directly to git, but I can't compile or test them without a Mac. Taking an iPad Pro everywhere is mostly extra weight if I _also_ have to bring a MacBook; it defeats the purpose of bringing the iPro.
 
 ##  Macminicolo
 
 I've been aware of [Macminicolo](https://macminicolo.net) for years mostly due to [iStat](https://bjango.com/ios/istat) for iOS, which appears to no longer be available in the App Store. They specialize in, well, colocation of Mac minis.
 
-![](mac-mini.png "Mac mini")
+![](/images/mac-mini.png "Mac mini")
 
 I finally settled on getting a mini and hosting it there, but was thinking I'd wait until the new mini models come out later in 2016. In typical Apple fashion, there is no announced release date, but looking at their [release history](http://buyersguide.macrumors.com/#Mac_Mini) for the mini, they are due for a new model now. Intel's [Skylake processors](http://www.macrumors.com/2015/09/02/intel-skylake-notebooks-desktops) are out and most of the Mac lineup should receive updates in 2016 (perhaps not the Mac Pro).
 
