@@ -2,7 +2,7 @@
 layout: post
 title: "Mac mini Server"
 date: 2015-12-31T15:08:32-07:00
-category: mac
+category:
 tags: mac, server, ipad
 ---
 
