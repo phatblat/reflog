@@ -8,7 +8,7 @@ tags: mac, server, ipad
 
 ## Traveling without a Mac
 
-My family and I traveled for Christmas this year I managed to leave the MacBook behind, bringing only iPads and iPhones on the trip.
+My family and I traveled for Christmas this year and I managed to leave the MacBook behind, bringing only iPads and iPhones on the trip.
 
 ![](/images/ipad-sizes.jpg "iPhone 5s (left), iPad mini 2 (center), iPad Pro with Smart Keyboard (right)")
 
