@@ -30,47 +30,47 @@ OK, enough selling, here are the pics. The smaller device is the 2015 12" MacBoo
 
 # Pictures
 
-Glorious display. Also, this setup has a blue bias.
-
 ![](/images/ipro-review-01.jpg)
 
-Not very exciting to look at, but I'm expecting this case to take the wear so the iPad can stay shiny.
+Glorious display. Also, this setup has a blue bias.
 
 ![](/images/ipro-review-02.jpg)
 
-So soft
+Not very exciting to look at, but I'm expecting this case to take the wear so the iPad can stay shiny.
 
 ![](/images/ipro-review-03.jpg)
 
-Silicone case on left, naked iPad Pro on right
+So soft
 
 ![](/images/ipro-review-04.jpg)
 
-Huge 12.9" screen
+Silicone case on left, naked iPad Pro on right
 
 ![](/images/ipro-review-05.jpg)
 
-I can't wait until my Smart Keyboard arrives so I'll have a stand+keyboard. I paired a normal Apple Bluetooth keyboard with the Pro earlier for some emails, but had to prop the iPad up on a book to use at a desk.
+Huge 12.9" screen
 
 ![](/images/ipro-review-06.jpg)
 
-2 pound (.9 kg) laptop, 1.5 pound (.68 kg) iPad
+I can't wait until my Smart Keyboard arrives so I'll have a stand+keyboard. I paired a normal Apple Bluetooth keyboard with the Pro earlier for some emails, but had to prop the iPad up on a book to use at a desk.
 
 ![](/images/ipro-review-07.jpg)
 
-The smaller one can be used to make apps for the bigger one. The odd shine is a cheap skin to prevent scratches.
+2 pound (.9 kg) laptop, 1.5 pound (.68 kg) iPad
 
 ![](/images/ipro-review-08.jpg)
 
-Safari on the left and Notes app on the right.
+The smaller one can be used to make apps for the bigger one. The odd shine is a cheap skin to prevent scratches.
 
 ![](/images/ipro-review-09.jpg)
 
-Safari on the left and Mail on right composing an email with the split in the middle.
+Safari on the left and Notes app on the right.
 
 ![](/images/ipro-review-10.jpg)
 
-Again, Safari on the left and Mail on the right composing and email, but with the split moved to the right. Mail adapts to more of the UI on the iPhone.
+Safari on the left and Mail on right composing an email with the split in the middle.
 
-![](/images/ipro-review-11.jpg)
+![](/images/ipro-review-11.png)
+
+Again, Safari on the left and Mail on the right composing and email, but with the split moved to the right. Mail adapts to more of the UI on the iPhone.
 
