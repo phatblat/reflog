@@ -45,3 +45,13 @@ gems:
   - octopress-codefence
   - octopress-gist
   - octopress-solarized
+
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Plugin settings
+jekyll-mentions:
+  base_url: https://twitter.com
