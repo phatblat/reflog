@@ -50,7 +50,7 @@ What the heck am I going to do with this? I have a few things in mind:
 
 In the upcoming months I'll be posting on topics related to setting up a Mac server, since I'll be going through it anyway.
 
-A few years ago, I built the CI stack for iOS and Android apps at Kaiser Permanente. Once that became a full-time job, [CGRekt](https://twitter.com/CGRekt) took that over so I could focus on building iOS apps. Now, I'm mainly a user of CI, so I like to play around with it at home where I can break things without affecting others.
+A few years ago, I built the CI stack for iOS and Android apps at Kaiser Permanente. Once that became a full-time job, @CGRekt took that over so I could focus on building iOS apps. Now, I'm mainly a user of CI, so I like to play around with it at home where I can break things without affecting others.
 
 I've wanted to write about CI for iOS for years but it's such a huge subject it's hard to know where to start. If I post as I go through setting it up, I think it'll be easier to write and consume.
 
