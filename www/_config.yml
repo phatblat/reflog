@@ -54,6 +54,9 @@ gems:
   - octopress-debugger
   - octopress-gist
   - octopress-image-tag
+
+  # Themes
+  - octopress-genesis-theme
   - octopress-solarized
 
   - jemoji

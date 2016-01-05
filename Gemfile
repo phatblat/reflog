@@ -11,6 +11,9 @@ group :jekyll_plugins do
   gem 'octopress-debugger'
   gem 'octopress-gist'
   gem 'octopress-image-tag'
+
+  # Themes
+  gem 'octopress-genesis-theme'
   gem 'octopress-solarized'
 
   gem 'jemoji'
