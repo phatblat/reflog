@@ -75,7 +75,7 @@ There are two options for configuring this Twitter plugin with your authenticati
 1. Add them to `_config.yml`
 2. Define them as environment variables
 
-Since I'm tracking my `_config.yml` in git, shared publically on GitHub, I'm opting for #2.
+Since I'm tracking my `_config.yml` in git, shared publicly on GitHub, I'm opting for #2.
 
 The challenge with environment variables is making sure they are defined whenever you need to run the command that depends on them. A simple solution is to add them to your `.bash_profile` or `.zshrc`, but since I'm _also_ [storing that on GitHub](https://github.com/phatblat/dotfiles/blob/master/.zshrc), I'm going to look for another option.
 
