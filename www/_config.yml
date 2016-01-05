@@ -33,11 +33,16 @@ draft_template: draft
 
 # Build settings
 markdown: kramdown
+
+# Markdown Processors
 kramdown:
-  enable_coderay: true
-  coderay:
-    coderay_line_numbers: list
-    coderay_css: class
+  input:          GFM
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 gems:
   - octopress-codeblock
