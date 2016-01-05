@@ -32,7 +32,11 @@ page_template: page
 draft_template: draft
 
 # Build settings
-markdown: kramdown
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
 
 # Markdown Processors
 kramdown:
