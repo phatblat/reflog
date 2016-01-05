@@ -19,7 +19,7 @@ The first plugin that I found when looking for this functionality is the obsolet
 
 Syntax:
 
-```
+```liquid class:"wrap"
 {% tweet https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 %}
 ```
 
@@ -29,7 +29,7 @@ Based on the tweet-tag plugin, the [jekyll-twitter-plugin](https://github.com/ro
 
 The syntax is very similar:
 
-```
+```liquid class:"wrap"
 {% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 %}
 ```
 
@@ -37,15 +37,15 @@ The syntax is very similar:
 
 There are a few formatting options, such as `align` and `width`:
 
-```
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='right' width='350' %}
+```liquid class:"wrap"
+{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='right' maxwidth='350' %}
 ```
 
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='right' width='350' %}
+{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='right' maxwidth='350' %}
 
 This plugin will pass along any extra parameters to the [oembed API](https://dev.twitter.com/rest/reference/get/statuses/oembed) for further customization.
 
-```
+```liquid class:"wrap"
 {% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 hide_thread='true' hide_media='true' %}
 ```
 
@@ -66,16 +66,16 @@ The challenge with environment variables is making sure they are defined wheneve
 
 Here is a very simple untracked file based solution. I created an `.env` file containing each environment variable on a separate line like so:
 
-```
-TWITTER_CONSUMER_KEY= ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙
-TWITTER_CONSUMER_SECRET= ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙
-TWITTER_ACCESS_TOKEN= ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙
-TWITTER_ACCESS_TOKEN_SECRET= ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙ ∙
+```bash class:"wrap"
+TWITTER_CONSUMER_KEY= ∙ ∙ ∙ ∙ ∙ ∙
+TWITTER_CONSUMER_SECRET= ∙ ∙ ∙ ∙ ∙
+TWITTER_ACCESS_TOKEN= ∙ ∙ ∙ ∙ ∙ ∙
+TWITTER_ACCESS_TOKEN_SECRET= ∙ ∙ ∙ ∙ ∙
 ```
 
 The values in this file are then loaded into the environment for the Jekyll process on the fly using the `env` command.
 
-```
+```bash class:"wrap"
 env $(cat .env | xargs) bundle exec jekyll serve
 ```
 
@@ -87,7 +87,7 @@ One caveat is that this command now generates an error if there is not an `.env`
 
 Note that the above environment variables can be loaded into the shell using the builtin `export` command instead of `env`. That is fine for testing, but leaves them defined in the environment for any other process to read.
 
-```
+```bash class:"wrap"
 echo $TWITTER_CONSUMER_KEY
 ```
 
@@ -95,7 +95,6 @@ I tend to forget about this sort of thing (it works, :shipit:!) and would rather
 
 # References
 
-- \<https://github.com/rob-murray/jekyll-twitter-plugin\>
-- \<https://dev.twitter.com/rest/reference/get/statuses/oembed\>
-- \<http://stackoverflow.com/questions/19331497/set-environment-variables-from-file\>
-
+- <https://github.com/rob-murray/jekyll-twitter-plugin>
+- <https://dev.twitter.com/rest/reference/get/statuses/oembed>
+- <http://stackoverflow.com/questions/19331497/set-environment-variables-from-file>
