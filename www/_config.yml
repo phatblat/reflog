@@ -40,14 +40,15 @@ kramdown:
     coderay_css: class
 
 gems:
-  - octopress-image-tag
   - octopress-codeblock
   - octopress-codefence
+  - octopress-debugger
   - octopress-gist
+  - octopress-image-tag
   - octopress-solarized
 
-  - jekyll-mentions
   - jemoji
+  - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
