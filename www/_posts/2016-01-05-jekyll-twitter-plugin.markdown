@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jekyll Twitter Plugin"
+date: 2016-01-05T12:51:55-07:00
 ---
 
 One of the downsides to using Octopress over vanilla Jekyll when deploying a blog like this to GitHub Pages is that you have to explicitly generate your static site files. This is because Octopress deploys only the static site to GHP. A simple Jekyll site can actually push the markdown source and config files directly to GHP and let them generate the static site. This downside is more pronounced for me as I'm doing the vast majority of work on this blog from my iPad Pro, where I don't have a ruby environment to run the octopress and jekyll commands.
