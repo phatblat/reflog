@@ -27,6 +27,7 @@ Syntax:
 ## jekyll-twitter-plugin
 
 Based on the tweet-tag plugin, the [jekyll-twitter-plugin](https://github.com/rob-murray/jekyll-twitter-plugin) provides the same functionality but has been updated to work with the newer Twitter API preconditions (authentication keys) and also is a proper ruby gem for easier installation and updates.
+
 The syntax is very similar:
 
 ```liquid class:"wrap"
