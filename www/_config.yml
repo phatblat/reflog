@@ -61,6 +61,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-twitter-plugin
 
 # Plugin settings
 jekyll-mentions:
