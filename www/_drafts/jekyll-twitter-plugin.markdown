@@ -26,7 +26,6 @@ Syntax:
 ## jekyll-twitter-plugin
 
 Based on the tweet-tag plugin, the [jekyll-twitter-plugin](https://github.com/rob-murray/jekyll-twitter-plugin) provides the same functionality but has been updated to work with the newer Twitter API preconditions (authentication keys) and also is a proper ruby gem for easier installation and updates.
-
 The syntax is very similar:
 
 ```liquid class:"wrap"
@@ -35,21 +34,36 @@ The syntax is very similar:
 
 {% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 %}
 
+
+> Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery,
+> you won't see images and these embedded tweets will fall back to a text-only version.
+> ![Ghostery Safari plugin showing Twitter tracker blocked](/images/ghostery-twitter-button.png)
+
+
+### align & width
+
 There are a few formatting options, such as `align` and `width`:
 
 ```liquid class:"wrap"
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='right' maxwidth='350' %}
+{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
 ```
 
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='right' maxwidth='350' %}
+{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
 
-This plugin will pass along any extra parameters to the [oembed API](https://dev.twitter.com/rest/reference/get/statuses/oembed) for further customization.
+The `width` parameter seems to have no effect on the text-only rendering of the tweet.
+
+
+### hide_media
+
+This plugin will pass along any extra parameters like `hide_media` to the [oembed API](https://dev.twitter.com/rest/reference/get/statuses/oembed) for further customization.
 
 ```liquid class:"wrap"
-{% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 hide_thread='true' hide_media='true' %}
+{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' %}
 ```
 
-{% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 hide_thread='true' hide_media='true' %}
+{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' %}
+
+Text rendering of the tweet is unaffected by `hide_media` because it only includes a link by default.
 
 ## Configuration
 
