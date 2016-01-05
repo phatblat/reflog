@@ -36,8 +36,7 @@ The syntax is very similar:
 {% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 %}
 
 
-> Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery,
-> you won't see images and these embedded tweets will fall back to a text-only version.
+> Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery, you won't see images and these embedded tweets will fall back to a text-only version.
 > ![Ghostery Safari plugin showing Twitter tracker blocked](/images/ghostery-twitter-button.png)
 
 
@@ -82,10 +81,10 @@ The challenge with environment variables is making sure they are defined wheneve
 Here is a very simple untracked file based solution. I created an `.env` file containing each environment variable on a separate line like so:
 
 ```bash class:"wrap"
-TWITTER_CONSUMER_KEY= ∙ ∙ ∙ ∙ ∙ ∙
-TWITTER_CONSUMER_SECRET= ∙ ∙ ∙ ∙ ∙
-TWITTER_ACCESS_TOKEN= ∙ ∙ ∙ ∙ ∙ ∙
-TWITTER_ACCESS_TOKEN_SECRET= ∙ ∙ ∙ ∙ ∙
+TWITTER_CONSUMER_KEY=...
+TWITTER_CONSUMER_SECRET=...
+TWITTER_ACCESS_TOKEN=...
+TWITTER_ACCESS_TOKEN_SECRET=...
 ```
 
 The values in this file are then loaded into the environment for the Jekyll process on the fly using the `env` command.
