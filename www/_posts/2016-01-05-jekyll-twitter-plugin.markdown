@@ -36,8 +36,11 @@ The syntax is very similar:
 {% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 %}
 
 
-> Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery, you won't see images and these embedded tweets will fall back to a text-only version.
-> ![Ghostery Safari plugin showing Twitter tracker blocked](/images/ghostery-twitter-button.png)
+### Ad Blockers
+
+Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery, you won't see the [Twitter Card](https://dev.twitter.com/cards/overview) version of these embedded tweets with images and they will instead fall back to a text-only version.
+
+![Ghostery Safari plugin showing Twitter tracker blocked](/images/ghostery-twitter-button.png)
 
 
 ### align & width
@@ -50,7 +53,7 @@ There are a few formatting options, such as `align` and `width`:
 
 {% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
 
-The `width` parameter seems to have no effect on the text-only rendering of the tweet.
+The `width` parameter must be between 220 and 550 inclusive and seems to have no effect on the text-only rendering of the tweet.
 
 
 ### hide_media
