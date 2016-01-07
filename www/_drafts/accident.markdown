@@ -24,7 +24,7 @@ My wife was waiting for me to get home. We had exchanged texts before I left wor
 
 I lifted my left hand to my mouth, bit down on the finger of my glove and pulled it off. Then I reached in my left coat pocket and pulled out my iPhone. I unlocked it with my thumbprint and then tried to launch the Messages app. At this point I noticed that both my hands were shaking violently. While it was cold out, I had been bundled up well, so this shaking was mostly due to shock. It took a lot of attempts to hack out a 3-word message as I kept hitting the wrong keys on the keyboard. Again, I forgot I can talk to these technologies. Years of typing with my thumb make that my go-to input mechanism.
 
-![](/images/accident-messages.png "iOS Messages app showing "Hit by car"")
+![](/images/accident-messages.jpg "iOS Messages app showing "Hit by car"")
 
 Eventually, I managed to enter "Hit by car" and hit the Send button. I locked my phone, put it back in my coat pocket and put my glove back on. I knew she would know where I was because that intersection is the only busy one in my .7 mile (1 km) walk home from work. I've had at least 3 close encounters in the same spot but I'm determined to walk because I enjoy the fresh air and time to think. The regular exercise has had a dramatic effect on my health as I was mostly sedentary before.
 
@@ -32,7 +32,7 @@ I eventually rolled onto my back. My whole right side hurt and I wanted to start
 
 The intersection was completely jammed. Two snowplows had driven into the middle of the intersection and stopped all the traffic to protect me. I could see that a few people had gotten out of there cars from where I was laying. A couple people covered me with blankets to keep me warm. The man on the phone assured me that an ambulance was on its way.
 
-![](/images/accident-scene.png "Picture of the scene of the accident")
+![](/images/accident-scene.jpg "Picture of the scene of the accident")
 
 After what seemed like only a couple minutes, a police office came over and asked if I was OK. I said "I don't know, I'm in a lot of pain". He asked me my name and the current date - both of which I could tell I got right because I didn't hesitate in answering.
 
@@ -58,7 +58,7 @@ After the X-Rays were done the ER Doctor said I had a fractured humerus near my 
 
 A police officer different than the one that asked me questions while I was lying in the road came to the ER to get my statement. He told me a lot of details about the accident that I didn't know before. Like the snowplows that had blocked the road. He also relayed the driver's story. She had been in the outer turn lane and another car had turned close behind me, blocking her view of me. My dark coat also didn't help as she didn't see me in enough time to react.
 
-![](/images/accident-map.png "Map with arrows showing traffic crossing my walking path")
+![](/images/accident-map.jpg "Map with arrows showing traffic crossing my walking path")
 
 The officer also mentioned that they found two hand prints on the hood of the car. I guess I dropped the measuring wheel and put up my hands to catch myself before my head hit. I don't remember doing this. Good thing I have quick reflexes!
 
