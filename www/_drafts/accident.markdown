@@ -1,0 +1,83 @@
+---
+layout: post
+title: "The Accident"
+tags: personal
+---
+
+On Friday, November 20, 2015 I was walking home from work, but I never made it there. It was a cold night here in Colorado, about 20 degrees Fahrenheit (-6 Celsius), and a tiny amount of snow had fallen before I left the office. Not enough to stick, but the ground was wet, as were windshields.
+
+I left the office about 5:30pm, put on my new H7 headphones, started playing some drum 'n bass and reset my [measuring wheel](http://www.amazon.com/Komelon-ML1212-Meter-Man-4-Inch-Measuring/dp/B001QTVXVY/ref=lp_3753421_1_3?s=hi&ie=UTF8&qid=1452141522&sr=1-3) to get an accurate distance of the trip I was embarking on. [^1]
+
+Just a block from the office is a major road with 3 lanes of traffic going each way. The street lights are notoriously long and even I get impatient waiting for the walk sign to come on. Pressing the pedestrian cross button gave the familiar beep-boop confirmation sound that it had sensed the touch of my gloved hand, but I pressed it 2 more times anyway for good measure.
+
+That night it was typical rush hour, but this late in the year (after Daylight Savings Time ends) it's dark by the time I'm walking home. The clouds cut off even the hint of sunlight from the already-set sun. Only the streetlights and the headlights of hundreds of cars going by were illuminating the world right now.
+
+The green left arrow light came on and two lanes of cars turned left across the crosswalk ahead of me. I was enjoying my music but turned the volume down a bit so that I could hear the traffic around me. I would have taken them off, but the headphones were keeping my ears warm since I had forgotten to bring my hat to work. I was sure glad I had worn my long, warm wool jacket today as it was also keeping me warm that cold, wintery night.
+
+After what seemed like an eternity, the "white walking guy" sign lit up and I proceeded to enter the crosswalk, rolling my measuring wheel ahead of me. Soon after I passed the median, I heard a car approaching to my right. This was not unusual at all. Cars often sneak out into the lane waiting for me to finish crossing, hoping to occupy space in case the light changes while they are waiting. Or, maybe they are hoping I will run out of their way. On this day, I looked to my right to see the headlights of an SUV and the next thing I knew, I was on the ground and the right side of my hip hurt worse than I've ever felt in my life.
+
+It only took me a second to realize what had happened. The car had not stopped in time and had hit me. What was disorienting is that I couldn't remember the impact. The intense pain was also disorienting. After a few more seconds, I realized that I couldn't see anything and I think I opened my eyes. I saw the sidewalk on the far side of the road that I had been walking towards, but it was further up the road than the intersection corner. Later, I figured out I had been carried a full car length on the hood and then thrown another car length, 10 meters or so in total.
+
+Everything around me was lit up as I was in the path of traffic with several pairs of headlights shining on me. The closest of which was the car that hit me. I saw my headphones lying on the wet pavement about 2 meters from me. I heard people talking and could hear that one man was on his mobile phone with emergency services. I tried to roll on my back but as I did so my right shoulder erupted with pain. I decided that rolling was a bad idea and stayed on my side, despite the pain in my hip.
+
+My wife was waiting for me to get home. We had exchanged texts before I left work. She had an appointment and I was going to watch our son. The only thing I could think about was that I was about to be taken to a hospital and wouldn't make it home. I tried to move my right arm to reach the Apple Watch on my left wrist. I was reminded that moving my right arm was a bad idea. I hadn't used "Hey Siri" enough yet to remember that I can just talk to my watch, but I was determined to contact my wife.
+
+I lifted my left hand to my mouth, bit down on the finger of my glove and pulled it off. Then I reached in my left coat pocket and pulled out my iPhone. I unlocked it with my thumbprint and then tried to launch the Messages app. At this point I noticed that both my hands were shaking violently. While it was cold out, I had been bundled up well, so this shaking was mostly due to shock. It took a lot of attempts to hack out a 3-word message as I kept hitting the wrong keys on the keyboard. Again, I forgot I can talk to these technologies. Years of typing with my thumb make that my go-to input mechanism.
+
+![](/images/accident-messages.png "iOS Messages app showing "Hit by car"")
+
+Eventually, I managed to enter "Hit by car" and hit the Send button. I locked my phone, put it back in my coat pocket and put my glove back on. I knew she would know where I was because that intersection is the only busy one in my .7 mile (1 km) walk home from work. I've had at least 3 close encounters in the same spot but I'm determined to walk because I enjoy the fresh air and time to think. The regular exercise has had a dramatic effect on my health as I was mostly sedentary before.
+
+I eventually rolled onto my back. My whole right side hurt and I wanted to start assessing the damage. There didn't appear to be any blood, everything was still attached, it just hurt.
+
+The intersection was completely jammed. Two snowplows had driven into the middle of the intersection and stopped all the traffic to protect me. I could see that a few people had gotten out of there cars from where I was laying. A couple people covered me with blankets to keep me warm. The man on the phone assured me that an ambulance was on its way.
+
+![](/images/accident-scene.png "Picture of the scene of the accident")
+
+After what seemed like only a couple minutes, a police office came over and asked if I was OK. I said "I don't know, I'm in a lot of pain". He asked me my name and the current date - both of which I could tell I got right because I didn't hesitate in answering.
+
+> You did good. Your head must be all right.
+
+Only a minute or so later the paramedics arrived and helped me to stand up. I couldn't put any weight on my right leg without almost passing out with pain. I couldn't even move my right leg forward to take a step. They helped me onto a stretcher and wheeled me into the ambulance.
+
+One of the paramedics put in an IV and gave me some sort of pain killer. I was already glad that I wasn't a.) dead, b.) unconscious or c.) paralyzed, so I was in a pretty good mood. That mood got better once the meds kicked in and I wasn't in mind-numbing pain.
+
+The ambulance hadn't even closed the doors yet when my wife and son appeared in front of me. I was so glad to see them. I told them I was OK and that I was sorry my wife was going to miss her appointment.
+
+We started driving to the nearest hospital with my family following behind in our car.
+
+# Emergency Room
+
+My memory of the hospital is a bit blurry since I was on strong pain killers by then. I don't remember taking off my clothes, but I was in a hospital gown, so that must have happened at some point. I remember I was starving but we weren't sure if I was going to need surgery yet. I was hoping not so that I could eat something.
+
+I remember the X-Rays. Oh boy. That was painful. The X-Ray technicians offered to help me move around into the positions they needed, but since I barely knew what was hurt I wasn't comfortable with them moving me around. My left arm and leg were fine, so I could use them to move my right appendages around.
+
+After the X-Rays were done the ER Doctor said I had a fractured humerus near my shoulder. They didn't find anything wrong with my hip. They helped me put my arm into a sling.
+
+## Police Debrief
+
+A police officer different than the one that asked me questions while I was lying in the road came to the ER to get my statement. He told me a lot of details about the accident that I didn't know before. Like the snowplows that had blocked the road. He also relayed the driver's story. She had been in the outer turn lane and another car had turned close behind me, blocking her view of me. My dark coat also didn't help as she didn't see me in enough time to react.
+
+![](/images/accident-map.png "Map with arrows showing traffic crossing my walking path")
+
+The officer also mentioned that they found two hand prints on the hood of the car. I guess I dropped the measuring wheel and put up my hands to catch myself before my head hit. I don't remember doing this. Good thing I have quick reflexes!
+
+Apparently, no one but myself saw the walk sign. I'm not surprised since drivers don't normally need to look at those, but it's weird that I'm the only person who knows that I had the right-of-way.
+
+The police office ended up giving the driver a reckless driving ticket.
+
+## Discharge?
+
+Eventually a young admin was sent in to discharge me. She asked me to stand and follow her. I thought she was crazy, but followed orders. I almost fell when I tried to put weight on my right leg again. I forgot that this didn't go so well the first time. Being heavily medicated, I was trusting that these health professionals knew what they were doing.
+
+They decided to do a CAT scan of my pelvis. That was actually fun because I didn't have to do anything but lay there and the two technicians were hilarious. "You made it to Trauma Bravo status!". I asked what I had to do to make it to Trauma Alpha. "Oh, lose a limb or lots of blood". I decided that I liked Trauma Bravo.
+
+The CAT scan revealed two fractures in the acetabulum of my pelvis. They were in the socket right above where the ball of the femur sits, so no wonder it hurt when I put weight on that leg.
+
+The doctor relayed the info that an Orthopedic surgeon had given overy the phone: 50% of this type of injury requires surgery. I've had minor surgery before, but this news hit me hard. I assumed that it meant a much longer recovery period. Immediately I was overcome by intense nausea. A nurse gave me some anti-nausea medication that they give cancer patients. Man, that stuff worked like a charm. I minute later and I was back to my normal drugged-up, broken self.
+
+Once I was no longer about to hurl and it was clear I wasn't having surgery that night, I finally ate.
+
+About 10:30pm they rolled me across the hospital in a wheelchair and checked me into a room.
+
+[^1]:	I'm working on a walking app which uses either GPS or the device accelerometer (depending on whether the iPhone has a motion co-processor) to measure distance. To gauge accuracy, I've been measuring common walking routes to compare with the values the app produces.
