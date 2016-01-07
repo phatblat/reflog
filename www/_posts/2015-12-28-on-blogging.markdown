@@ -17,7 +17,7 @@ In almost 2 years I've written 5 blog posts. I didn't really have a goal for pos
 
 ## New Approach
 
-It's (almost) a new year and I've had some big changes (more on this later) and I've just [rebooted this blog]({% post_url 2015-12-21-jekylls-ferarri %}). Might as well rethink my approach.
+It's (almost) a new year and I've had some big changes (more on this [later]({% post_url 2016-01-06-accident %})) and I've just [rebooted this blog]({% post_url 2015-12-21-jekylls-ferarri %}). Might as well rethink my approach.
 
 The main thing that I _really_ want out of this blog is to get better at writing **about** software. In order to do that, I need to get better at writing words. I write enough code; that's covered. Once the words come together, it's pretty easy to whip up some code to go with a post, especially with Xcode Playgrounds these days.
 
@@ -43,5 +43,3 @@ I write plenty well in [140 character bites](https://twitter.com/phatblat "My tw
 ## Wrap-up
 
 I've been active on Twitter for 8 years now so this shouldn't be a huge challenge. I figured I'd just "pick it up" when it came to blogging but finding the time has proven to be harder than expected. Hopefully, getting my thought-to-post speed down will help get more of these ideas out of my head and onto the web.
-
-
