@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Mac Server Setup"
+title: "Mac Server Setup: Step 1"
 tags: server, energy-saver, defaults, pmset
 ---
-
-# Mac Server Setup❓
 
 By default, Macs are designed to be user machines. While they are very easy to set up as servers, a few of the standard settings are not ideal for hosting services.
 
@@ -21,7 +19,7 @@ Launch System Preferences and navigate to the Energy Saver pane. Change these se
 
 ![](/images/mac-server-setup-energysaver.jpg "Energy Saver system preferences pane")
 
-This is a screenshot from my Mac mini which @macminicolo was kind enough to set these settings up like this for me.
+This is a screenshot from my Mac mini which @macminicolo was kind enough to set up like this for me.
 
 ## Reading Values from the Command Line
 
