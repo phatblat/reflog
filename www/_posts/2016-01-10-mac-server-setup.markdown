@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mac Server Setup: Step 1"
+date: 2016-01-10T19:49:36-07:00
 tags: server, energy-saver, defaults, pmset
 ---
 
