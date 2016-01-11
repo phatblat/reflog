@@ -62,7 +62,7 @@ The "Automatic Restart On Power Loss" key is the most important.
 
 Because of the way these settings are stored, they are difficult to set using the `defaults` command, which requires passing a plist file in order to set a tree of key-value pairs such as the above "Custom Profile" entry. The danger with doing this is that many values are set or unset in one step and these values will likely change through the years as OS X evolves.
 
-## Reading Values from the Command Line
+## Changing Values from the Command Line
 
 A better approach for manipulating these values from the command line is to use the `pmset` command. This utility can be used to read the current Energy Saver values (read them all with `pmset -g`, but uses shorter key aliases than defaults. The pmset keys are mostly space-free for easier typing on the command line.
 
