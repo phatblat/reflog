@@ -78,12 +78,8 @@ Currying helps to simplify these test functions so that the view controller does
 Calling one of these curried outlet assertion functions in Swift is very simple.
 
 ```swift
-it("has a leftDoneButton outlet") {
-  hasButtonOutlet("leftDoneButton")
-}
+hasButtonOutlet("leftDoneButton")
 ```
-
-> These tests  use the [Quick](https://github.com/Quick/Quick) testing framework
 
 So, what is that `hasButtonOutlet` magic? It’s a [partially-applied](https://en.m.wikipedia.org/wiki/Partial_application) function  saved in a local variable. This is how it is created:
 
@@ -118,9 +114,7 @@ private func outlet(viewController: UIViewController) -> (String) -> AnyObject? 
 The action assertion functions are similarly simple.
 
 ```swift
-it("receives a didTapDone action from leftDoneButton") {
-  receivesAction("didTapDone", from: "leftDoneButton")
-}
+receivesAction("didTapDone", from: "leftDoneButton")
 ```
 
 One caveat is that they require an outlet on the thing sending the action. A lot of the time an outlet isn’t necessary for an action-sending UI element, but I haven’t found a way to get the actions from the view controller (yet).
