@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Testing IBOutlets and IBActions With Curried Functions in Swift"
+date: 2016-04-29T13:39:19-06:00
 tags: swift, interface-builder, testing, function-currying, quick, nimble
 ---
 
