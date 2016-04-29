@@ -20,6 +20,8 @@ Many of the view controllers between the device-specific storyboards were shared
 
 I came up with a scheme to use unit tests to assert that these outlets and actions were bound correctly so that I could validate them almost instantly. I ended up with a handful of ugly C functions that I never shared.
 
+It's much easier nowadays to build a universal iPhone/iPad app with shared storyboards due to [Size Classes](https://developer.apple.com/library/ios/recipes/xcode_help-IB_adaptive_sizes/chapters/AboutAdaptiveSizeDesign.html). The new [UI Testing](https://developer.apple.com/videos/play/wwdc2015/406/) in Xcode 7 makes it much easier to automate testing, which can catch any missed outlet/action bidings (as long as your test touches every UI element). However, I still find this sort of low-level assertion helpful, expecially since it's so easy to do.
+
 ## Swift Curried Functions
 
 When I learned that Swift had super-clean function currying syntax I refactored these ugly helper functions into something much more beautiful, learning about a new language feature in the process.
