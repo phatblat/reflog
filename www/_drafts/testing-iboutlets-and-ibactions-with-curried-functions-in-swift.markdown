@@ -159,3 +159,7 @@ fourChainedFunctions(1)(2)(3)(4)
 Versions of these outlet/action assertion functions using the older, cleaner  syntactic-sugar function currying can be reviewed on the [`deprecated-syntax`](https://github.com/phatblat/CurriedOutletFunctions/blob/deprecated-syntax/CurriedOutletFunctionsTests/SpecFunctions.swift#L47) tag of the example repo.
 
 Apple, you can take my sweet curry, but you'll never take my Sriracha.
+
+<center>
+{% img /images/sriracha-clip-on-bag.jpg 400 'Small Sriracha bottle attached to messenger bag' title:'Sriracha2Go' %}
+</center>
