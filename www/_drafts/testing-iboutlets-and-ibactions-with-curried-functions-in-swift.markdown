@@ -180,6 +180,12 @@ A full project demonstrating these helper functions is available at:
 
 The functions in the sample code are much more beautiful due to @esttorhe's help in simplifying the API.
 
+Running the tests in the example project gives quick[^quick] feedback that all the outlets and actions are properly connected without even launching the app.
+
+[^quick]: These tests are run using the [Quick 😜 testing framework](https://github.com/Quick/Quick).
+
+![](/images/outlet-action-tests-pass.png "ViewControllerSpec test status with all green checkmarks")
+
 ## Deprecated 😭
 
 Shortly after @allonsykraken posted [Hipster Swift](http://krakendev.io/blog/hipster-swift), I learned that the super-clean syntactic sugar version of curried functions is [going away in Swift 3](https://github.com/apple/swift-evolution/blob/master/proposals/0002-remove-currying.md) and it made me sad. While this is a more esoteric language feature, I really like how curried functions can be used to simplify an API. Also, the way Swift implemented curried functions made them so easy to use.
