@@ -75,7 +75,7 @@ Currying helps to simplify these test functions so that the view controller does
 
 ## Outlet Assertion
 
-Calling one of these curried outlet assertion functions in Swift is very simple.
+Just look at how beautiful this is!
 
 ```swift
 hasButtonOutlet("leftDoneButton")
@@ -96,15 +96,18 @@ outlet(viewController)("leftDoneButton”)
 
 Currying reduces noise and makes these tests more readable - Handy when you have dozens of outlets and are chasing down which one you mistyped.
 
-Here's what the definition of `outlet` looks like:
+Here's what a condensed definition of `outlet` looks like:
 
 ```swift
-private func outlet(viewController: UIViewController) -> (String) -> AnyObject? {
-  return { (outlet: String) -> AnyObject? in
-    guard let object = viewController.valueForKey(outlet)
-      else { fail("\(outlet) outlet was nil"); return nil }
+func outlet<T>(viewController: UIViewController) -> (String) -> T? {
+  return { (expectedOutlet: String) -> T? in
+    guard let object = viewController.valueForKey(expectedOutlet)
+      else { fail("\(expectedOutlet) outlet was nil"); return nil }
 
-    return object
+    guard let objectOfType = object as? T
+      else { fail("\(object) outlet was not a \(T.self)"); return nil }
+
+    return objectOfType
   }
 }
 ```
@@ -128,7 +131,9 @@ var receivesAction: (String, from: String) -> Void
 receivesAction = action(viewController)
 ```
 
-The implementation of the `action` function is more complex as getting to the action differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`.
+The implementation of the `action` function is more complex as getting to the action differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`. [^action-test]
+
+[^action-test]: This bit of UIKit magic is from @qcoding's [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
 
 ```swift
 func action(viewController: UIViewController) -> (String, from: String) -> Void {
@@ -167,8 +172,6 @@ func action(viewController: UIViewController) -> (String, from: String) -> Void 
 ```
 
 > The `expect` function is part of the [Nimble](https://github.com/Quick/Nimble) matcher framework
-
-Credit goes to @qcoding for his [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
 
 ## Code
 
