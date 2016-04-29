@@ -158,7 +158,7 @@ func fourChainedFunctions(a: Int) -> (Int -> (Int -> (Int -> Int))) {
 fourChainedFunctions(1)(2)(3)(4)
 ```
 
-[^curried-function-example]: Borrowed with :heart: from [http://krakendev.io/blog/hipster-swift#currying](http://krakendev.io/blog/hipster-swift#currying)
+[^curried-function-example]: Borrowed with :heart: from the **Almighty Kraken** [http://krakendev.io/blog/hipster-swift#currying](http://krakendev.io/blog/hipster-swift#currying)
 
 Versions of these outlet/action assertion functions using the older, cleaner  syntactic-sugar function currying can be reviewed on the [`deprecated-syntax`](https://github.com/phatblat/CurriedOutletFunctions/blob/deprecated-syntax/CurriedOutletFunctionsTests/SpecFunctions.swift#L47) tag of the example repo.
 
