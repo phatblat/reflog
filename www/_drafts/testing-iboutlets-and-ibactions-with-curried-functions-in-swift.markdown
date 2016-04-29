@@ -122,7 +122,7 @@ Credit goes to @qcoding for his [post on Stack Overflow](http://stackoverflow.co
 ## Code
 
 A full project demonstrating these helper functions is available at:
-[https://github.com/phatblat/CurriedOutletFunctions](https://github.com/phatblat/CurriedOutletFunctions)
+[https://github.com/phatblat/OutletActionAssertion](https://github.com/phatblat/OutletActionAssertion)
 
 The functions in the sample code are much more beautiful due to @esttorhe's help in simplifying the API.
 
