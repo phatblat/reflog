@@ -38,14 +38,12 @@ func sum(A: Int)(_ B: Int)(_ C: Int) -> Int {
 This function can be called in a number of ways:
 
 ```
-let value = sum2(1)(2)(3) // 6
+let value = sum(1)(2)(3) // 6
 
-let sum3 = sum2(1)        // Int -> Int -> Int
-sum3(2)(3)                // 6
-
-let sum4 = sum2(1)        // Int -> Int -> Int
-let sum5 = sum4(2)        // Int -> Int
-sum5(3)                   // 6
+let sumA = sum(1)         // Int -> Int -> Int
+let sumAB = sumA(2)       // Int -> Int
+sumA(2)(3)                // 6
+sumAB(3)                  // 6
 ```
 
 An equivalent `sum` function using the more verbose syntax looks like:
