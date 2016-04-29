@@ -109,6 +109,8 @@ private func outlet(viewController: UIViewController) -> (String) -> AnyObject? 
 }
 ```
 
+> The `fail` function is part of the [Nimble](https://github.com/Quick/Nimble) matcher framework
+
 ## Action Assertion
 
 The action assertion functions are similarly simple.
@@ -163,6 +165,8 @@ func action(viewController: UIViewController) -> (String, from: String) -> Void 
   }
 }
 ```
+
+> The `expect` function is part of the [Nimble](https://github.com/Quick/Nimble) matcher framework
 
 Credit goes to @qcoding for his [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
 
