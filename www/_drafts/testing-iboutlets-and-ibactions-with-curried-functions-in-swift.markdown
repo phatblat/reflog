@@ -8,11 +8,13 @@ tags: swift, interface-builder, testing, function-currying, quick, nimble
 
 ## IBOutlet Testing
 
-A couple years ago I built a universal iPhone / iPad app with three storyboards:
+A couple years ago I built a universal iPhone / iPad app with three storyboards.
 
 - iPhone
 - iPad
 - shared scenes
+
+![](/images/firefly-storyboards.png "iPad, iPhone and shared storyboards")
 
 Many of the view controllers between the device-specific storyboards were shared and thus the outlets and actions all had to be the same. Each outlet property was bound to two different storyboards and required launching the app in different simulators to manually validate they were hooked up correctly. It was a constant challenge to keep them in sync whenever renaming a property or method. Most of the time I would forget to update at least one outlet and I’d have another lovely crasher from the device I forgot to test on.
 
