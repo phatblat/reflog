@@ -34,7 +34,7 @@ it("has a leftDoneButton outlet") {
 
 > These tests  use the [Quick](https://github.com/Quick/Quick) testing framework
 
-So, what is that `hasButtonOutlet` magic? It’s a partially-applied function (I think).
+So, what is that `hasButtonOutlet` magic? It’s a [partially-applied](https://en.m.wikipedia.org/wiki/Partial_application) function .
 
 ```swift
 var hasButtonOutlet: String -> UIButton?
