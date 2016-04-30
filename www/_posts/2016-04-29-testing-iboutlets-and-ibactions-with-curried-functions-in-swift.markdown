@@ -89,13 +89,15 @@ var hasButtonOutlet: String -> UIButton?
 hasButtonOutlet = outlet(viewController)
 ```
 
-Calling the full function would look like this:
+The return type in the `hasButtonOutlet` declaration is the type used for validation inside the generic `outlet` function below.
+
+Calling the `outlet` full function would look like this:
 
 ```swift
 outlet(viewController)("leftDoneButton")
 ```
 
-Currying reduces noise and makes these tests more readable - Handy when you have dozens of outlets and are chasing down which one you mistyped.
+But, you might as well just have a plain, old multi-parameter function if you want all that. Currying reduces noise and makes these tests more readable - Handy when you have dozens of outlets and are chasing down which one you mistyped.
 
 Here is a condensed definition of the `outlet` curried function:
 
