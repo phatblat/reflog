@@ -38,15 +38,15 @@ func sum(A: Int)(_ B: Int)(_ C: Int) -> Int {
 This function can be called in a number of ways:
 
 ```
-let value = sum(1)(2)(3) // 6
+var value = sum(1)(2)(3) // 6
 
 let sumA = sum(1)         // Int -> Int -> Int
 let sumAB = sumA(2)       // Int -> Int
-sumA(2)(3)                // 6
-sumAB(3)                  // 6
+value = sumA(2)(3)        // 6
+value = sumAB(3)          // 6
 ```
 
-An equivalent `sum` function using the more verbose syntax looks like:
+An equivalent `sum` function using the more verbose syntax shows that this curried function is really a set of nested functions.
 
 ```
 func sum(A: Int) -> (Int) -> (Int) -> Int {
@@ -58,7 +58,7 @@ func sum(A: Int) -> (Int) -> (Int) -> Int {
 }
 ```
 
-You can see how this more verbose syntax can get noisy very quickly with many arguments. It's a common practice to define a `curry` function which which transforms a 2-args func into its curried version. [^curry-func]
+This more verbose syntax can get noisy very quickly with many arguments. It's a common practice to define a `curry` function which transforms a 2 or more parameter function into its curried version. [^curry-func]
 
 [^curry-func]: As I've learned from @aligatr
 
@@ -66,11 +66,11 @@ You can see how this more verbose syntax can get noisy very quickly with many ar
 func curry(f: (A,B)->C) -> A->B->C
 ```
 
-The thoughtbot [Curry library](https://github.com/thoughtbot/Curry/blob/master/Source/Curry.swift) has all the variations of the `curry` function up to 19 arguments.
+The thoughtbot [Curry library](https://github.com/thoughtbot/Curry/blob/master/Source/Curry.swift) has all the variations of the `curry` function up to 19 parameters.
 
 ## Why Currying?
 
-Currying helps to simplify these test functions so that the view controller doesn't have to be passed in with each function call. There's also the benefit of being able to give the returned function a very readable name.
+Currying helps to simplify these outlet and action test functions so that the view controller doesn't have to be passed in every function call. There's also the benefit of being able to give the returned function a very readable name.
 
 ## Outlet Assertion
 
@@ -80,22 +80,22 @@ Just look at how beautiful this is!
 hasButtonOutlet("leftDoneButton")
 ```
 
-So, what is that `hasButtonOutlet` magic? It’s a [partially-applied](https://en.m.wikipedia.org/wiki/Partial_application) function  saved in a local variable. This is how it is created:
+So, what is that `hasButtonOutlet` magic? It’s a [partially-applied](https://en.m.wikipedia.org/wiki/Partial_application) function saved in a local variable. This is how it is created:
 
 ```swift
 var hasButtonOutlet: String -> UIButton?
 hasButtonOutlet = outlet(viewController)
 ```
 
-Calling the fully-applied function would look like this:
+Calling the full function would look like this:
 
 ```swift
-outlet(viewController)("leftDoneButton”)
+outlet(viewController)("leftDoneButton")
 ```
 
 Currying reduces noise and makes these tests more readable - Handy when you have dozens of outlets and are chasing down which one you mistyped.
 
-Here's what a condensed definition of `outlet` looks like:
+Here is a condensed definition of the `outlet` curried function:
 
 ```swift
 func outlet<T>(viewController: UIViewController) -> (String) -> T? {
@@ -123,14 +123,14 @@ receivesAction("didTapDone", from: "leftDoneButton")
 
 One caveat is that they require an outlet on the thing sending the action. A lot of the time an outlet isn’t necessary for an action-sending UI element, but I haven’t found a way to get the actions from the view controller (yet).
 
-Here’s the setup for the partially-applied `receivesAction`:
+Here is the setup for the partially-applied `receivesAction`:
 
 ```swift
 var receivesAction: (String, from: String) -> Void
 receivesAction = action(viewController)
 ```
 
-The implementation of the `action` function is more complex as getting to the action differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`. [^action-test]
+Implementation of the `action` function is more complex as getting to the IBAction differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`. [^action-test]
 
 [^action-test]: This bit of UIKit magic is from @qcoding's [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
 
@@ -215,7 +215,7 @@ fourChainedFunctions(1)(2)(3)(4)
 
 [^curried-function-example]: Borrowed with :heart: from the **Almighty Kraken** [http://krakendev.io/blog/hipster-swift#currying](http://krakendev.io/blog/hipster-swift#currying)
 
-Versions of these outlet/action assertion functions using the older, cleaner  syntactic-sugary function currying can be reviewed on the [`deprecated-syntax`](https://github.com/phatblat/CurriedOutletFunctions/blob/deprecated-syntax/CurriedOutletFunctionsTests/SpecFunctions.swift#L47) tag of the example repo.
+Versions of these outlet/action assertion functions using the older, cleaner syntactic-sugary function currying can be reviewed on the [`deprecated-syntax`](https://github.com/phatblat/CurriedOutletFunctions/blob/deprecated-syntax/CurriedOutletFunctionsTests/SpecFunctions.swift#L47) tag of the example repo.
 
 Apple, you can take my sweet curry, but you'll never take my Sriracha.
 
