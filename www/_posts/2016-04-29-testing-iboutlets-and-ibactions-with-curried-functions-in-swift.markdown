@@ -46,6 +46,8 @@ sumA(2)(3)            // 6
 sumAB(3)              // 6
 ```
 
+In this example, the `sumA` function has captured the value of the `A` parameter (1), whereas `sumAB` has captured the values of both the `A` and `B` parameters (1 and 2). When the final `C` parameter is passed to any of these functions the resulting `Int` value (6) is returned.
+
 An equivalent `sum` function using the more verbose curried function syntax shows that it is really a set of nested functions.
 
 ```
@@ -60,7 +62,7 @@ func sum(A: Int) -> (Int) -> (Int) -> Int {
 
 This more verbose syntax can get noisy very quickly with many arguments. It's a common practice to define a `curry` function which transforms a multi-parameter function into its curried version. [^curry-func]
 
-[^curry-func]: As I've learned from @aligatr
+[^curry-func]: As I've learned from @aligatr 🐊
 
 ```
 func curry(f: (A,B)->C) -> A->B->C
@@ -70,7 +72,7 @@ The thoughtbot [Curry library](https://github.com/thoughtbot/Curry/blob/master/S
 
 ## Why Currying?
 
-Currying helps to simplify these outlet and action test functions so that the view controller doesn't have to be passed in every function call. There's also the benefit of being able to give the returned function a very readable name.
+Currying helps to simplify these outlet and action test functions so that the view controller doesn't have to be passed in every function call. Just like the `sumA` function holds onto the value of the first parameter, these test functions hold onto a reference to the view controller being tested. There's also the benefit of being able to give the returned function a very readable name.
 
 ## Outlet Assertion
 
@@ -132,7 +134,7 @@ receivesAction = action(viewController)
 
 Implementation of the `action` function is more complex as getting to the IBAction differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`. [^action-test]
 
-[^action-test]: This bit of UIKit magic is from @qcoding's [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
+[^action-test]: This bit of UIKit magic ✨ is from @qcoding's [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
 
 ```swift
 func action(viewController: UIViewController) -> (String, from: String) -> Void {
@@ -187,7 +189,9 @@ Running the tests in the example project gives quick[^quick] feedback that all t
 
 ## Deprecated 😭
 
-Shortly after @allonsykraken posted [Hipster Swift](http://krakendev.io/blog/hipster-swift), I learned that the super-clean syntactic sugar version of curried functions is [going away in Swift 3](https://github.com/apple/swift-evolution/blob/master/proposals/0002-remove-currying.md) and it made me sad. While this is a more esoteric language feature, I really like how curried functions can be used to simplify an API. Also, the way Swift implemented curried functions made them so easy to use.
+Shortly after @allonsykraken posted [Hipster Swift](http://krakendev.io/blog/hipster-swift), I learned that the super-clean syntactic sugar version of curried functions is [going away in Swift 3](https://github.com/apple/swift-evolution/blob/master/proposals/0002-remove-currying.md)[^swift3] and it made me sad. While this is a more esoteric language feature, I really like how curried functions can be used to simplify an API. Also, the way Swift implemented curried functions made them so easy to use.
+
+[^swift3]: Note that function currying isn't going away, only the nice shorthand (sweet 🍭) syntax is.
 
 Isn’t this:
 
