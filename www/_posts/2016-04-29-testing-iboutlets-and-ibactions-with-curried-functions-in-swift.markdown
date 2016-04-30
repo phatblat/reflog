@@ -35,18 +35,18 @@ func sum(A: Int)(_ B: Int)(_ C: Int) -> Int {
 }
 ```
 
-This function can be called in a number of ways:
+This `sum` function can be called in a number of ways:
 
 ```
-var value = sum(1)(2)(3) // 6
+let sumA = sum(1)     // Int -> Int -> Int
+let sumAB = sumA(2)   // Int -> Int
 
-let sumA = sum(1)         // Int -> Int -> Int
-let sumAB = sumA(2)       // Int -> Int
-value = sumA(2)(3)        // 6
-value = sumAB(3)          // 6
+sum(1)(2)(3)          // 6
+sumA(2)(3)            // 6
+sumAB(3)              // 6
 ```
 
-An equivalent `sum` function using the more verbose syntax shows that this curried function is really a set of nested functions.
+An equivalent `sum` function using the more verbose curried function syntax shows that it is really a set of nested functions.
 
 ```
 func sum(A: Int) -> (Int) -> (Int) -> Int {
@@ -58,7 +58,7 @@ func sum(A: Int) -> (Int) -> (Int) -> Int {
 }
 ```
 
-This more verbose syntax can get noisy very quickly with many arguments. It's a common practice to define a `curry` function which transforms a 2 or more parameter function into its curried version. [^curry-func]
+This more verbose syntax can get noisy very quickly with many arguments. It's a common practice to define a `curry` function which transforms a multi-parameter function into its curried version. [^curry-func]
 
 [^curry-func]: As I've learned from @aligatr
 
