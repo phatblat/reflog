@@ -5,7 +5,7 @@ date: 2016-04-29T13:39:19-06:00
 tags: swift, interface-builder, testing, function-currying, quick, nimble
 ---
 
-> This post is a eulogy to syntactic-sugar-filled curried functions.
+> This post is a eulogy to the syntactic-sugar :lollipop: syntax for curried functions in Swift 1-2.
 
 ## IBOutlet Testing
 
@@ -62,7 +62,7 @@ func sum(A: Int) -> (Int) -> (Int) -> Int {
 
 This more verbose syntax can get noisy very quickly with many arguments. It's a common practice to define a `curry` function which transforms a multi-parameter function into its curried version. [^curry-func]
 
-[^curry-func]: As I've learned from @aligatr 🐊
+[^curry-func]: As I've learned from @aligatr :crocodile:
 
 ```
 func curry(f: (A,B)->C) -> A->B->C
@@ -136,7 +136,7 @@ receivesAction = action(viewController)
 
 Implementation of the `action` function is more complex as getting to the IBAction differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`. [^action-test]
 
-[^action-test]: This bit of UIKit magic ✨ is from @qcoding's [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
+[^action-test]: This bit of UIKit magic :sparkles: is from @qcoding's [post on Stack Overflow](http://stackoverflow.com/questions/18699524/is-it-possible-to-test-ibaction) for how to test IBActions.
 
 ```swift
 func action(viewController: UIViewController) -> (String, from: String) -> Void {
@@ -185,15 +185,15 @@ The functions in the sample code are much more beautiful due to @esttorhe's help
 
 Running the tests in the example project gives quick[^quick] feedback that all the outlets and actions are properly connected without even launching the app.
 
-[^quick]: These tests are run using the [Quick 😜 testing framework](https://github.com/Quick/Quick).
+[^quick]: These tests are run using the [Quick :stuck_out_tongue_winking_eye: testing framework](https://github.com/Quick/Quick).
 
 ![](/images/outlet-action-tests-pass.png "ViewControllerSpec test status with all green checkmarks")
 
-## Deprecated 😭
+## Deprecated :sob:
 
 Shortly after @allonsykraken posted [Hipster Swift](http://krakendev.io/blog/hipster-swift), I learned that the super-clean syntactic sugar version of curried functions is [going away in Swift 3](https://github.com/apple/swift-evolution/blob/master/proposals/0002-remove-currying.md)[^swift3] and it made me sad. While this is a more esoteric language feature, I really like how curried functions can be used to simplify an API. Also, the way Swift implemented curried functions made them so easy to use.
 
-[^swift3]: Note that function currying isn't going away, only the nice shorthand (sweet 🍭) syntax is.
+[^swift3]: Note that function currying isn't going away, only the nice shorthand (sweet :lollipop:) syntax is.
 
 Isn’t this:
 
@@ -219,7 +219,7 @@ func fourChainedFunctions(a: Int) -> (Int -> (Int -> (Int -> Int))) {
 fourChainedFunctions(1)(2)(3)(4)
 ```
 
-[^curried-function-example]: Borrowed with :heart: from the **Almighty Kraken** [http://krakendev.io/blog/hipster-swift#currying](http://krakendev.io/blog/hipster-swift#currying)
+[^curried-function-example]: Borrowed with :heart: from the **Almighty Kraken** :octopus: [http://krakendev.io/blog/hipster-swift#currying](http://krakendev.io/blog/hipster-swift#currying)
 
 Versions of these outlet/action assertion functions using the older, cleaner syntactic-sugary function currying can be reviewed on the [`deprecated-syntax`](https://github.com/phatblat/CurriedOutletFunctions/blob/deprecated-syntax/CurriedOutletFunctionsTests/SpecFunctions.swift#L47) tag of the example repo.
 
