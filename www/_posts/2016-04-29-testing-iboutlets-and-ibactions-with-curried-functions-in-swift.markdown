@@ -5,6 +5,8 @@ date: 2016-04-29T13:39:19-06:00
 tags: swift, interface-builder, testing, function-currying, quick, nimble
 ---
 
+**Update:** These nifty utility functions are now available as the [Outlets Pod]({% post_url 2016-05-03-outlets-pod %}).
+
 > This post is a eulogy to the syntactic-sugar :lollipop: syntax for curried functions in Swift 1-2.
 
 ## IBOutlet Testing
