@@ -1,8 +1,10 @@
 # Reflog
 
-The Octopress 3 source behind [phatblat.com](http://phatblat.com).
+The Octopress 3 source behind [phatbl.at][1]’s reflog.
 
 ## License
 
-This repo is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for rights and limitations.
+This repo is licensed under the MIT License. See the [LICENSE][2] file for rights and limitations.
 
+[1]:	http://phatbl.at
+[2]:	LICENSE.md
