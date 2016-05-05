@@ -53,9 +53,9 @@ In this example, the `sumA` function has captured the value of the `A` parameter
 An equivalent `sum` function using the more verbose curried function syntax shows that it is really a set of nested functions.
 
 ```
-func sum(A: Int) -> (Int) -> (Int) -> Int {
-  return { (B: Int) -> (C: Int) -> Int in
-    return { (C: Int) -> Int in
+func sum(A: Int) -> (Int -> (Int -> Int)) {
+  return { B in
+    return { C in
       return A + B + C
     }
   }
