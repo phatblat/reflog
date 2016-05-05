@@ -54,11 +54,11 @@ An equivalent `sum` function using the more verbose curried function syntax show
 
 ```
 func sum(A: Int) -> (Int) -> (Int) -> Int {
-    return { (B: Int) -> (C: Int) -> Int in
-        return { (C: Int) -> Int in
-            return A + B + C
-        }
+  return { (B: Int) -> (C: Int) -> Int in
+    return { (C: Int) -> Int in
+      return A + B + C
     }
+  }
 }
 ```
 
@@ -81,17 +81,29 @@ Currying helps to simplify these outlet and action test functions so that the vi
 Just look at how beautiful this is!
 
 ```swift
-hasButtonOutlet("leftDoneButton")
+it("has a leftButton outlet") {
+  hasButtonOutlet("leftButton")
+}
 ```
+
+> This is a BDD-style test using the [Quick](https://github.com/Quick/Quick) framework.
 
 So, what is that `hasButtonOutlet` magic? It’s a [partially-applied](https://en.m.wikipedia.org/wiki/Partial_application) function saved in a local variable. This is how it is created:
 
 ```swift
-var hasButtonOutlet: String -> UIButton?
-hasButtonOutlet = outlet(viewController)
+class ViewControllerSpec: QuickSpec {
+  override func spec() {
+    var viewController: UIViewController!
+    var hasButtonOutlet: (String -> UIButton?)!
+    describe("view controller") {
+      beforeEach {
+        viewController = ...
+        hasButtonOutlet = outlet(viewController)
+      }
+      ...
 ```
 
-The return type in the `hasButtonOutlet` declaration is the type used for validation inside the generic `outlet` function below.
+The return type in the `hasButtonOutlet` declaration (`UIButton` in the above example) is the type used for validation inside the generic `outlet` function below.
 
 Calling the `outlet` full function would look like this:
 
@@ -124,7 +136,9 @@ func outlet<T>(viewController: UIViewController) -> (String) -> T? {
 The action assertion functions are similarly simple.
 
 ```swift
-receivesAction("didTapDone", from: "leftDoneButton")
+it("receives a didTapLeftButton: action from leftButton") {
+  receivesAction("didTapLeftButton:", from: "leftButton")
+}
 ```
 
 One caveat is that they require an outlet on the thing sending the action. A lot of the time an outlet isn’t necessary for an action-sending UI element, but I haven’t found a way to get the actions from the view controller (yet).
@@ -132,8 +146,15 @@ One caveat is that they require an outlet on the thing sending the action. A lot
 Here is the setup for the partially-applied `receivesAction`:
 
 ```swift
-var receivesAction: (String, from: String) -> Void
-receivesAction = action(viewController)
+class ViewControllerSpec: QuickSpec {
+    override func spec() {
+    var receivesAction: ((String, from: String) -> Void)!
+    describe("view controller") {
+      beforeEach {
+        viewController = ...
+        receivesAction = action(viewController)
+      }
+      ...
 ```
 
 Implementation of the `action` function is more complex as getting to the IBAction differs depending on whether the UI element is a `UIBarButtonItem` or a type of `UIControl`. [^action-test]
