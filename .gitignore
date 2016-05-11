@@ -1,12 +1,20 @@
+# Finder
 .DS_Store
+
+# Bundler
+bin/
+.rubygems/
+
+# Jekyll
+_site/
+.*-cache/
+.jekyll-metadata
 
 # Octopress
 .deploy
 
-# Jekyll
-.*-cache
-.jekyll-metadata
-
 # Sensitive files
 .env
+
+# Ulysses
 .Ulysses-favorites.plist
