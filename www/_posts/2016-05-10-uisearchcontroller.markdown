@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "UISearchController"
+date: 2016-05-10T22:31:31-06:00
 tags: swift, ios, tableview
 ---
 
@@ -25,7 +26,7 @@ override func viewDidLoad() {
 }
 ```
 
-We're going to reserve some space in the UI using a "container" view[^container-view]. This will showi where the search bar will eventually be in the storyboard to give an idea of how it will fit with other UI elements. Also, constraints can be tied to the container view in the storyboard so that we don't have to install any in code.
+We're going to reserve some space in the UI using a "container" view[^container-view]. This will show where the search bar will eventually be in the storyboard to give an idea of how it will fit with other UI elements. Also, constraints can be tied to the container view in the storyboard so that none need to be installed in code.
 
 [^container-view]: Nothing as fancy as [View Controller Containment](https://www.objc.io/issues/1-view-controllers/containment-view-controller/). Just a simple `UIView` which we'll be using as the parent view for the `UISearchBar`.
 
@@ -35,7 +36,7 @@ We're going to reserve some space in the UI using a "container" view[^container-
 
 ## Search Results Controller
 
-In this example, we're going to use a simple `UITableViewController` with each cell displaying a single Swift keyword.
+The search results controller is just a simple `UITableViewController` with each cell displaying a single Swift keyword.
 
 <center>
 {% img /images/uisearchcontroller-search-results.png 300 'Search results table showing a list of swift keywords' title:'Search results' %}
@@ -46,14 +47,14 @@ In this example, we're going to use a simple `UITableViewController` with each c
 A `UISearchController` must be set up in code and it's constructor takes a single argument - a `UIViewController` which is going to display the search results. Here we pass in a reference to our `searchResultsController` stored in a property.
 
 ```swift
-let searchController = UISearchController(searchResultsController: self.searchResultsController)
+let searchController =
+  UISearchController(searchResultsController: self.searchResultsController)
 searchController.searchResultsUpdater = self
 searchController.delegate = self
+searchController.searchBar.delegate = self
 
 searchController.hidesNavigationBarDuringPresentation = true
 searchController.dimsBackgroundDuringPresentation = false
-
-searchController.searchBar.delegate = self
 ```
 
 There is little interaction with `UISearchController` beyond creating one, configuring it and connecting it to the following:
@@ -65,7 +66,7 @@ There is little interaction with `UISearchController` beyond creating one, confi
 
 ## Search Results Updater
 
-The `UISearchResultsUpdating` protocol is very simple, but it's where all the fun stuff happens:
+The `UISearchResultsUpdating` protocol is very simple, but it's where all the fun happens:
 
 ```swift
 func updateSearchResultsForSearchController(searchController: UISearchController)
@@ -74,9 +75,9 @@ func updateSearchResultsForSearchController(searchController: UISearchController
   ...
 ```
 
-This method is called whenever the text changes in the search bar. The current text can be accessed through the `searchController` parameter. This makes it easy to make any object handle these updates.
+This method is called whenever the text changes in the search bar. The current text can be accessed through the `searchController` parameter. Any object can handle these updates.
 
-It's common to also make the search results controller the `searchResultsUpdater` and have it conform to the `UISearchResultsUpdating` protocol. That configuration causes the search results controller to update itself with the latest search term. However, we're not going that route because of a special case we want to handle: a custom "empty results" view. Attempting to add a subview to a `UITableView` is fraught with peril, so we're not going to do that.
+It's common to also make the search results controller the `searchResultsUpdater` and have it conform to the `UISearchResultsUpdating` protocol. That configuration causes the search results controller to update itself with each change to the search term. However, we're not going that route because of a special case we want to handle: a custom "empty results" view. Attempting to add a subview to a `UITableView` is fraught with peril, so we're not going to do that.
 
 
 <center>
