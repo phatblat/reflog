@@ -3,7 +3,7 @@ layout: post
 title: "Jemoji"
 date: 2016-01-03T21:29:17-07:00
 category:
-tags: jekyll, github-pages, emoji
+tags: jekyll github-pages emoji
 ---
 
 I was browsing the GitHub Pages docs when I came across the list of [Jekyll plugins](https://help.github.com/articles/using-jekyll-plugins-with-github-pages) that are supported. Following the install/config instructions, I gave them a whirl on some [draft posts](https://github.com/octopress/octopress#new-draft) and they all worked fabulously with Octopress 3.

@@ -3,7 +3,7 @@ layout: post
 title: "iPad Pro Mini-Review"
 date: 2016-01-03T08:53:53-07:00
 category:
-tags: ipad, review
+tags: ipad review
 ---
 
 > This was originally posted on Facebook on 2015-12-01. It's not a very detailed review as it was intended for my non-technical friends and family. Reposting here as the size comparison with the MacBook will probably be interesting to others.

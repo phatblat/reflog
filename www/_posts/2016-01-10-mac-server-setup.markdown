@@ -2,7 +2,7 @@
 layout: post
 title: "Mac Server Setup: Step 1"
 date: 2016-01-10T19:49:36-07:00
-tags: server, energy-saver, defaults, pmset
+tags: server energy-saver defaults pmset
 ---
 
 By default, Macs are designed to be user machines. While they are very easy to set up as servers, a few of the standard settings are not ideal for hosting services.

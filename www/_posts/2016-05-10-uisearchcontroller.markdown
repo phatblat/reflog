@@ -2,7 +2,7 @@
 layout: post
 title: "UISearchController"
 date: 2016-05-10T22:31:31-06:00
-tags: swift, ios, tableview
+tags: swift ios tableview
 ---
 
 A "search controller" is the thing behind a `UISearchBar` on iOS that is responsible for showing and hiding the "search results" screen (typically a table view) and updating the results in response to changes to the search term, character by character.

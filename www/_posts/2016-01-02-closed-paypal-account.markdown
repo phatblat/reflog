@@ -3,7 +3,7 @@ layout: post
 title: Close Your PayPal Account
 date: 2016-01-02T15:42:37-07:00
 category:
-tags: security, paypal
+tags: security paypal
 ---
 
 # WTF

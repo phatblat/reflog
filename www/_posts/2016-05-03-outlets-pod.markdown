@@ -2,7 +2,7 @@
 layout: post
 title: "Outlets Pod"
 date: 2016-05-03T21:06:22-06:00
-tags: swift, cocoapods, carthage, ios
+tags: swift cocoapods carthage ios
 ---
 
 <style>
