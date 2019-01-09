@@ -24,12 +24,12 @@ example to copy.
 
 As the first step in [SODD](https://dzone.com/articles/stack-overflow-driven-development-sodd-its-really),
 I made sure to Google whether anyone had figured this out before.
-Erica Sadun has a great post on 
+@ericasadun has a great post on 
 [Swift Logging](https://ericasadun.com/2015/05/22/swift-logging/),
 but it's from the Swift 1-2 days and a bit dated now. Plus, I dislike calling C
 functions from Swift and want to minimize the use of C APIs.
 
-I found a newer post by Saad Ismael on
+I found a newer post by @thesaadismail on
 [Eavesdropping on Swift’s Print Statements](https://medium.com/@thesaadismail/eavesdropping-on-swifts-print-statements-57f0215efb42)
 which served as my starting point. There are a few key points in his post:
 
@@ -65,7 +65,7 @@ will build up a string of all the data that passes through.
 
 One-time setup code to wire up the two `Pipe`s and capture `contents`.
 
-```
+```swift
 init() {
     // Set up a read handler which fires when data is written to our inputPipe
     inputPipe.fileHandleForReading.readabilityHandler = { [weak self] fileHandle in
@@ -111,7 +111,7 @@ func openConsolePipe() {
 > `stdoutFileDescriptor` is my computed property for `FileHandle.standardOutput.fileDescriptor`,
 which is the same value as `STDOUT_FILENO`, or simply `1`.
 
-This clearly works, but it's the one piece of magic from Saad Ismael's post that I don't
+This clearly works, but it's the one piece of magic from @thesaadismail's post that I don't
 fully understand. The calls to `dup2` return the 2nd argument's value indicating success,
 however there was no change to any `fileDescriptor` properties as I was expecting.
 `FileHandle.fileDescriptor` is read-only so perhaps the Swift Foundation functionality
