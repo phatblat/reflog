@@ -48,6 +48,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 # Markdown Processors
+# https://kramdown.gettalong.org/options.html
 kramdown:
   input:          GFM
   auto_ids:       true
@@ -55,22 +56,9 @@ kramdown:
   entity_output:  as_char
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+  coderay_line_numbers: nil
 
-plugins:
-  - octopress-codeblock
-  - octopress-codefence
-  - octopress-debugger
-  - octopress-gist
-  - octopress-image-tag
-  - octopress-solarized
-
-  - jemoji
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-twitter-plugin
+syntax_highlighter: coderay
 
 # Plugin settings
 jekyll-mentions:

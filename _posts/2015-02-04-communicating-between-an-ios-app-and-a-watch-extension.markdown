@@ -8,7 +8,7 @@ categories:  ios watchkit architecture
 
 I'm building a WatchKit extension for an existing iOS app and have been experimenting with the "plumbing" between the two. Watch extensions are different animals than other iOS 8 extensions, but there is a lot of overlap in this area. Today I made a diagram to show the options of getting data to the iPhone app from the Watch and vice-versa.
 
-{% img /images/apple_watch_communication.png 'a flowchart diagram' title:'Communicating between an iOS App and a Watch Extension' %}
+<img src="/images/apple_watch_communication.png" alt="'a flowchart diagram'" title="Communicating between an iOS App and a Watch Extension">
 
 This is simply a graphical representation of the summary presented in a [Developer Forums thread](https://devforums.apple.com/thread/256667?tstart=0).
 

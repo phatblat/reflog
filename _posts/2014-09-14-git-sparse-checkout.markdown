@@ -17,7 +17,8 @@ The exercise here is to get a copy of just the images from my blog. Not terribly
 
 ## The Code
 
-{% gist a5caa3bb3a3784f03000 sparse_checkout.sh [options] %}
+{% gist a5caa3bb3a3784f03000 sparse_checkout.sh %}
+
 
 I'm going to walk through this script with the lines a bit out of order; variables will be interspersed with the code that uses them. I generally build scripts with all the variables at the top to make it easy to see what can be tweaked, but having them inline makes the logic easier to follow.
 
@@ -88,7 +89,7 @@ The `sparse-checkout` file uses the same syntax as `.gitignore`. The following l
 
 After changing the `.git/info/sparse-checkout` file, do a `checkout <branch>` (`checkout source` in the case of Octopress) in order to update the work tree with this new "view" of files.
 
-{% img center /images/git-sparse-checkout-markdown.png 'an image from OS X Terminal showing a tree of only markdown files' title:'Sparse checkout of only markdown files' %}
+<img class="center" src="/images/git-sparse-checkout-markdown.png" alt="'an image from OS X Terminal showing a tree of only markdown files'" title="Sparse checkout of only markdown files">
 
 After getting this far into this feature of git, I may end up using it to help reduce the filesystem noise from Octopress. It always takes me a few minutes to remember where everything goes.
 
