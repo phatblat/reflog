@@ -58,13 +58,6 @@ kramdown:
   enable_coderay: false
 
 plugins:
-  - octopress-codeblock
-  - octopress-codefence
-  - octopress-debugger
-  - octopress-gist
-  - octopress-image-tag
-  - octopress-solarized
-
   - jemoji
   - jekyll-mentions
   - jekyll-redirect-from
