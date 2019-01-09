@@ -20,8 +20,9 @@ The first plugin that I found when looking for this functionality is the obsolet
 
 Syntax:
 
-```liquid class:"wrap"
-{% tweet https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 %}
+<!-- https://stackoverflow.com/a/5866429/39207 -->
+```liquid
+{{ "{% tweet https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 " }}%}
 ```
 
 ## jekyll-twitter-plugin
@@ -30,11 +31,11 @@ Based on the tweet-tag plugin, the [jekyll-twitter-plugin](https://github.com/ro
 
 The syntax is very similar:
 
-```liquid class:"wrap"
-{% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 %}
+```liquid
+{{ "{% twitter https://twitter.com/DepressedDarth/status/683671063855759360 " }}%}
 ```
 
-{% twitter oembed https://twitter.com/DepressedDarth/status/683671063855759360 %}
+{% twitter https://twitter.com/DepressedDarth/status/683671063855759360 %}
 
 
 ### Ad Blockers
@@ -48,11 +49,11 @@ Note: if you're blocking the "Twitter Button" tracker with a browser plugin like
 
 There are a few formatting options, such as `align` and `width`:
 
-```liquid class:"wrap"
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
+```liquid
+{{ "{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' " }}%}
 ```
 
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
+{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
 
 The `width` parameter must be between 220 and 550 inclusive and seems to have no effect on the text-only rendering of the tweet.
 
@@ -61,11 +62,11 @@ The `width` parameter must be between 220 and 550 inclusive and seems to have no
 
 This plugin will pass along any extra parameters like `hide_media` to the [oembed API](https://dev.twitter.com/rest/reference/get/statuses/oembed) for further customization.
 
-```liquid class:"wrap"
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' %}
+```liquid
+{{ "{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' " }}%}
 ```
 
-{% twitter oembed https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' %}
+{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' %}
 
 Text rendering of the tweet is unaffected by `hide_media` because it only includes a link by default.
 
@@ -84,7 +85,7 @@ The challenge with environment variables is making sure they are defined wheneve
 
 Here is a very simple untracked file based solution. I created an `.env` file containing each environment variable on a separate line like so:
 
-```bash class:"wrap"
+```bash
 TWITTER_CONSUMER_KEY=...
 TWITTER_CONSUMER_SECRET=...
 TWITTER_ACCESS_TOKEN=...
@@ -93,7 +94,7 @@ TWITTER_ACCESS_TOKEN_SECRET=...
 
 The values in this file are then loaded into the environment for the Jekyll process on the fly using the `env` command.
 
-```bash class:"wrap"
+```bash
 env $(cat .env | xargs) bundle exec jekyll serve
 ```
 
@@ -105,7 +106,7 @@ One caveat is that this command now generates an error if there is not an `.env`
 
 Note that the above environment variables can be loaded into the shell using the builtin `export` command instead of `env`. That is fine for testing, but leaves them defined in the environment for any other process to read.
 
-```bash class:"wrap"
+```bash
 echo $TWITTER_CONSUMER_KEY
 ```
 

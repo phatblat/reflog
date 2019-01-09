@@ -10,7 +10,7 @@ tags: ipad, review
 
 Talked with my dad earlier today and was raving to him how much I love the new iPad Pro. I've used every iPad since the original but this is the first one that has the potential to replace a laptop IMHO, at least for casual users or casual use by pro users. Case in point: it's pretty much all I've been using for the last week and a half while I've been laid up at home recovering from my [accident]({% post_url 2016-01-06-accident %}). The only things I've broken out my MacBook for are for Xcode, a second set of browser tabs for some Black Friday and Cyber Monday shopping and to do some general maintenance on my development tools.
 
-{% twitter oembed https://twitter.com/phatblat/status/674332881938833408 align='center' %}
+{% twitter https://twitter.com/phatblat/status/674332881938833408 align='center' %}
 
 So, what's so great about this? It's "just" a bigger iPad, right? That's exactly why!
 
