@@ -9,11 +9,11 @@ categories: 360idev ibeacon
 
 <img class="right" src="/images/particle_back.jpg" width="150" alt="'an image of a Particle device showing a number on the back'" title="Particle iBeacon">
 
-Everyone who attended this year's [360|iDev](http://360idev.com) in Denver was given a [Particle](https://kstechnologies.com/particle/) from KS Technologies. These are simple looking iBeacon devices that are fully configurable via KST's [Particle Accelerator](https://itunes.apple.com/us/app/particle-accelerator/id727105504?mt=8) app. KST also posted about this [awesome giveaway](https://kstechnologies.com/free-360idev-ibeacon/) on their blog.
+Everyone who attended this year's [360\|iDev](http://360idev.com) in Denver was given a [Particle](https://kstechnologies.com/particle/) from KS Technologies. These are simple looking iBeacon devices that are fully configurable via KST's [Particle Accelerator](https://itunes.apple.com/us/app/particle-accelerator/id727105504?mt=8) app. KST also posted about this [awesome giveaway](https://kstechnologies.com/free-360idev-ibeacon/) on their blog.
 
 ### tl;dr
 
-> The password scheme for the Particles given out at 360|iDev is: **360iDev123** — where _123_ is the number on the back.
+> The password scheme for the Particles given out at 360\|iDev is: **360iDev123** — where _123_ is the number on the back.
 
 <!-- more -->
 
@@ -51,7 +51,7 @@ Launch the Particle Accelerator app and tap the toggle switch in the upper right
 
 ## Password
 
-The password scheme for the Particles given out at 360|iDev is: **360iDev123** — where _123_ is the number on the back.
+The password scheme for the Particles given out at 360\|iDev is: **360iDev123** — where _123_ is the number on the back.
 
 The number on the back of my Particle is 57, so the initial password to configure it was 360iDev57 (no leading zeros).
 
@@ -63,7 +63,7 @@ You can change the password once the current password is accepted. A blank passw
 
 The UUID essentially defines a group of iBeacons. In the CoreLocation API, each `CLBeaconRegion` is identified by the UUID, and there can be many iBeacons in each region. It is also possible to monitor for multiple beacon regions at the same time.
 
-The Particles given out at 360|iDev all have their UUID set to **7D65B622-4AA8-4560-914C-502BE940BC16**. You can change this if you want. One of the UUIDs used by the AirLocate app (see below) is already in the list (E2C56DB5-DFFB-48D2-B060-D0F5A71096E0), so you can simply select this if you're wanting to test.
+The Particles given out at 360\|iDev all have their UUID set to **7D65B622-4AA8-4560-914C-502BE940BC16**. You can change this if you want. One of the UUIDs used by the AirLocate app (see below) is already in the list (E2C56DB5-DFFB-48D2-B060-D0F5A71096E0), so you can simply select this if you're wanting to test.
 
 You can also give your Particle a unique UUID. On your mac, the `uuidgen` terminal command will generate a new UUID.
 
@@ -74,7 +74,7 @@ $ uuidgen
 
 ## Major & Minor Numbers
 
-Within a single `CLBeaconRegion`, individual `CLBeacon` instances are identified by unique combinations of the `major` and `minor` numbers. The Particles from 360|iDev all have a `major` value of 1 and unique `minor` numbers that correspond to the number printed on the back of the shell.
+Within a single `CLBeaconRegion`, individual `CLBeacon` instances are identified by unique combinations of the `major` and `minor` numbers. The Particles from 360\|iDev all have a `major` value of 1 and unique `minor` numbers that correspond to the number printed on the back of the shell.
 
 # Testing your Particle
 
@@ -98,7 +98,7 @@ This sample app was released at WWDC 2013 for testing iBeacons.
 
 https://github.com/phatblat/RoyGBeacon
 
-I created a simple app which changes the background color of the screen from gray to red depending on how close you are to an iBeacon. This app will work with any brand of iBeacon, but you may need to [modify the source](https://github.com/phatblat/RoyGBeacon/blob/master/RoyGBeacon/RGBMainViewController.m#L41) to add the UUID of your beacon (the AirLocate and 360|iDev UUIDs are included).
+I created a simple app which changes the background color of the screen from gray to red depending on how close you are to an iBeacon. This app will work with any brand of iBeacon, but you may need to [modify the source](https://github.com/phatblat/RoyGBeacon/blob/master/RoyGBeacon/RGBMainViewController.m#L41) to add the UUID of your beacon (the AirLocate and 360\|iDev UUIDs are included).
 
 ## BTLExplorer
 
