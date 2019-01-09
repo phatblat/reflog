@@ -7,7 +7,7 @@ published: true
 categories: 360idev ibeacon
 ---
 
-{% img right /images/particle_back.jpg 150 'an image of a Particle device showing a number on the back' title:'Particle iBeacon' %}
+<img class="right" src="/images/particle_back.jpg" width="150" alt="'an image of a Particle device showing a number on the back'" title="Particle iBeacon">
 
 Everyone who attended this year's [360|iDev](http://360idev.com) in Denver was given a [Particle](https://kstechnologies.com/particle/) from KS Technologies. These are simple looking iBeacon devices that are fully configurable via KST's [Particle Accelerator](https://itunes.apple.com/us/app/particle-accelerator/id727105504?mt=8) app. KST also posted about this [awesome giveaway](https://kstechnologies.com/free-360idev-ibeacon/) on their blog.
 
@@ -29,9 +29,9 @@ After you pop the top off, use a pen to push the coin battery down toward the le
 
 When you put the battery back in, the positive (+) side goes up.
 
-{% img /images/particle_opening_slot.png 200 'an image of opening the Particle using a coin' title:'Particle shell opening slot' %}
-{% img /images/particle_battery.jpg 200 'an image of the Particle battery being removed' title:'Particle battery removal' %}
-{% img /images/particle_open.jpg 200 'an image of the Particle internals' title:'Particle open with battery out' %}
+<img src="/images/particle_opening_slot.png" width="200" alt="'an image of opening the Particle using a coin'" title="Particle shell opening slot">
+<img src="/images/particle_battery.jpg" width="200" alt="'an image of the Particle battery being removed'" title="Particle battery removal">
+<img src="/images/particle_open.jpg" width="200" alt="'an image of the Particle internals'" title="Particle open with battery out">
 
 # Config Prep
 
@@ -45,7 +45,7 @@ Before continuing, you'll need the following:
 
 # Configuration
 
-{% img right /images/particle_accelerator_app.png 200 'an image of the Particle Accelerator app showing my device' title:'Particle Accelerator app' %}
+<img class="right" src="/images/particle_accelerator_app.png" width="200" alt="'an image of the Particle Accelerator app showing my device'" title="Particle Accelerator app">
 
 Launch the Particle Accelerator app and tap the toggle switch in the upper right corner to enable scanning. Once your Particle appears, tap on it to bring up the configuration screen.
 
@@ -68,7 +68,7 @@ The Particles given out at 360|iDev all have their UUID set to **7D65B622-4AA8-4
 You can also give your Particle a unique UUID. On your mac, the `uuidgen` terminal command will generate a new UUID.
 
 ```
-$ uuidgen                                                                                            
+$ uuidgen
 30FDAAFB-C585-4DA5-81F9-2CA293EFCF93
 ```
 
@@ -78,7 +78,7 @@ Within a single `CLBeaconRegion`, individual `CLBeacon` instances are identified
 
 # Testing your Particle
 
-{% img right /images/particle_detector_app.png 170 'an image of the Particle Detector app showing my device' title:'Particle Detector app' %}
+<img class="right" src="/images/particle_detector_app.png" width="170" alt="'an image of the Particle Detector app showing my device'" title="Particle Detector app">
 
 ## Particle Detector
 
@@ -92,7 +92,7 @@ https://developer.apple.com/LIBRARY/ios/samplecode/AirLocate/Introduction/Intro.
 
 This sample app was released at WWDC 2013 for testing iBeacons.
 
-{% img right /images/roygbeacon.png 170 'an image of Roy G. Beacon app with a red background showing my device' title:'RoyGBeacon app' %}
+<img class="right" src="/images/roygbeacon.png" width="170" alt="'an image of Roy G. Beacon app with a red background showing my device'" title="RoyGBeacon app">
 
 ## RoyGBeacon
 

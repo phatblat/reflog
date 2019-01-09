@@ -88,7 +88,7 @@ The `sparse-checkout` file uses the same syntax as `.gitignore`. The following l
 
 After changing the `.git/info/sparse-checkout` file, do a `checkout <branch>` (`checkout source` in the case of Octopress) in order to update the work tree with this new "view" of files.
 
-{% img center /images/git-sparse-checkout-markdown.png 'an image from OS X Terminal showing a tree of only markdown files' title:'Sparse checkout of only markdown files' %}
+<img class="center" src="/images/git-sparse-checkout-markdown.png" alt="'an image from OS X Terminal showing a tree of only markdown files'" title="Sparse checkout of only markdown files">
 
 After getting this far into this feature of git, I may end up using it to help reduce the filesystem noise from Octopress. It always takes me a few minutes to remember where everything goes.
 
