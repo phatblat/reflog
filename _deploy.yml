@@ -3,6 +3,7 @@
 # https://github.com/octopress/octopress#deploying-your-site
 #
 
+---
 # How do you want to deploy? git, rsync or s3.
 method: git
 
@@ -17,6 +18,3 @@ git_url: git@github.com:phatblat/reflog-static.git
 # If using GitHub project pages, set the branch to 'gh-pages'.
 # For GitHub user/organization pages or Heroku, set the branch to 'master'.
 git_branch: master
-
-# Destination directory
-# remote_path:
