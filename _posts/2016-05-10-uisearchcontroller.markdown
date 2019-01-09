@@ -31,7 +31,7 @@ We're going to reserve some space in the UI using a "container" view[^container-
 [^container-view]: Nothing as fancy as [View Controller Containment](https://www.objc.io/issues/1-view-controllers/containment-view-controller/). Just a simple `UIView` which we'll be using as the parent view for the `UISearchBar`.
 
 <center>
-{% img /images/uisearchcontroller-main-scene.png 300 'Main scene showing search bar container view' title:'Main scene' %}
+<img src="/images/uisearchcontroller-main-scene.png" width="300" alt="'Main scene showing search bar container view'" title="Main scene">
 </center>
 
 ## Search Results Controller
@@ -39,7 +39,7 @@ We're going to reserve some space in the UI using a "container" view[^container-
 The search results controller is just a simple `UITableViewController` with each cell displaying a single Swift keyword.
 
 <center>
-{% img /images/uisearchcontroller-search-results.png 300 'Search results table showing a list of swift keywords' title:'Search results' %}
+<img src="/images/uisearchcontroller-search-results.png" width="300" alt="'Search results table showing a list of swift keywords'" title="Search results">
 </center>
 
 ## Search Controller
@@ -81,7 +81,7 @@ It's common to also make the search results controller the `searchResultsUpdater
 
 
 <center>
-{% img /images/uisearchcontroller-no-results.png 300 'Empty search results screen' title:'Empty search results' %}
+<img src="/images/uisearchcontroller-no-results.png" width="300" alt="'Empty search results screen'" title="Empty search results">
 </center>
 
 Instead the "main" view controller will be the `searchResultsUpdater` and it will pass the current `searchTerm` into the search results controller. The search results controller will take care of filtering and return the number of results displayed.

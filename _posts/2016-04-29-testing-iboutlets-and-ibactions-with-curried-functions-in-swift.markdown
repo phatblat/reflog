@@ -249,7 +249,7 @@ Versions of these outlet/action assertion functions using the older, cleaner syn
 Apple, you can take my sweet curry, but you'll never take my Sriracha.
 
 <center>
-{% img /images/sriracha-clip-on-bag.jpg 400 'Small Sriracha bottle attached to messenger bag' title:'Sriracha2Go' %}
+<img src="/images/sriracha-clip-on-bag.jpg" width="400" alt="'Small Sriracha bottle attached to messenger bag'" title="Sriracha2Go">
 </center>
 
 <br>
