@@ -61,14 +61,6 @@ kramdown:
 
 syntax_highlighter: coderay
 
-plugins:
-  - jemoji
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-twitter-plugin
-
 # Plugin settings
 jekyll-mentions:
   base_url: https://twitter.com
