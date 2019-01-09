@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'jekyll-docs'
 gem 'kramdown'
 gem 'coderay'
 
