@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 Hello there. I'm [phatblat](https://twitter.com/phatblat), aka Ben Chatelain, and this is my reflog. You'll find me as `phatblat` on all the things.
