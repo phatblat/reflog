@@ -1,6 +1,6 @@
 # Reflog
 
-The Jekyll markdown source for [phatbl.at][https://phatbl.at]’s reflog.
+The Jekyll markdown source for [phatbl.at](https://phatbl.at)’s reflog.
 
 ## License
 
