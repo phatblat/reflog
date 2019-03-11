@@ -14,7 +14,7 @@ tap or click the button below on an Apple device to install my digital business 
 
 [![Add to Apple Wallet](/images/add-to-apple-wallet.png "Click to add to Apple Wallet")](/pass)
 
-If you are interested in making your own, greab the source of this pass from my
+If you are interested in making your own, grab the source of this pass from my
 [phatblat.pass](https://github.com/phatblat/phatblat.pass) repo.
 
 ## Work
