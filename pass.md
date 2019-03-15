@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /pass
+permalink: /pass/
 redirect_to: https://s3-us-west-2.amazonaws.com/phatblat/phatblat.pkpass
 ---
 
