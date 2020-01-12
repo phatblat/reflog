@@ -24,7 +24,7 @@ example to copy.
 
 As the first step in [SODD](https://dzone.com/articles/stack-overflow-driven-development-sodd-its-really),
 I made sure to Google whether anyone had figured this out before.
-@ericasadun has a great post on 
+@ericasadun has a great post on
 [Swift Logging](https://ericasadun.com/2015/05/22/swift-logging/),
 but it's from the Swift 1-2 days and a bit dated now. Plus, I dislike calling C
 functions from Swift and want to minimize the use of C APIs.
@@ -90,7 +90,7 @@ or `readData(ofLength:)` immediately blocks the current thread seemingly forever
 because my `inputPipe` is still open so the file has no "end".
 
 `availableData` is the property to use as it will have a `Data` object of the character data
-write to the pipe's file handle so far.
+written to the pipe's file handle so far.
 
 ### openConsolePipe
 
@@ -111,9 +111,9 @@ func openConsolePipe() {
 > `stdoutFileDescriptor` is my computed property for `FileHandle.standardOutput.fileDescriptor`,
 which is the same value as `STDOUT_FILENO`, or simply `1`.
 
-This clearly works, but it's the one piece of magic from @thesaadismail's post that I don't
+This works, but it's the one piece of magic from @thesaadismail's post that I don't
 fully understand. The calls to `dup2` return the 2nd argument's value indicating success,
-however there was no change to any `fileDescriptor` properties as I was expecting.
+however there was no change to any `fileDescriptor` property values as I was expecting.
 `FileHandle.fileDescriptor` is read-only so perhaps the Swift Foundation functionality
 doesn't refresh this value.
 
@@ -127,7 +127,7 @@ to restore stdout to no avail.
 
 ### 💡
 
-Then I recalled an experimented I did a few years ago to suppress all output to stdout in a little
+Then I recalled an experiment I did a few years ago to suppress all output to stdout in a little
 project called [nolog](https://github.com/phatblat/nolog/blob/master/NoLog/NoLog/ThisClassLoadsFirst.m#L17).
 it uses `freopen()` to reopen stdout, pointing it to a new file path. nolog redirects stdout to
 `/dev/null`, a well-known way to ignore output from a terminal command.
@@ -172,15 +172,15 @@ expect(output.contents) == expectedOutput
 output.closeConsolePipe()
 ```
 
-Here I'm using the Nimble [`noEventuallyNot`](https://github.com/Quick/Nimble/blob/master/Sources/Nimble/Matchers/Async.swift#L142-L148)
+Here I'm using the Nimble [`toEventuallyNot`](https://github.com/Quick/Nimble/blob/master/Sources/Nimble/Matchers/Async.swift#L142-L148)
 function to take care of the asynchroncity of these file handles as they are
-essentially text streams. If you are using XCTest, take a look at 
+essentially text streams. If you are using XCTest, take a look at
 [Testing Asynchronous Operations with Expectations](https://developer.apple.com/documentation/xctest/asynchronous_tests_and_expectations/testing_asynchronous_operations_with_expectations).
 
 ## References
 
-- [`OutputListener.swift`](https://github.com/mas-cli/mas/blob/network-refactor/MasKitTests/OutputListener.swift)
-   - used in [`info` command tests](https://github.com/mas-cli/mas/blob/network-refactor/MasKitTests/Commands/InfoCommandSpec.swift#L55-L68)
+- [`OutputListener.swift`](https://github.com/mas-cli/mas/blob/master/MasKitTests/OutputListener.swift)
+  - used in [`info` command tests](https://github.com/mas-cli/mas/blob/master/MasKitTests/Commands/InfoCommandSpec.swift#L55-L68)
 - [nolog](https://github.com/phatblat/nolog/blob/master/NoLog/NoLog/ThisClassLoadsFirst.m#L17)
 - [Eavesdropping on Swift’s Print Statements](https://medium.com/@thesaadismail/eavesdropping-on-swifts-print-statements-57f0215efb42)
 - [Swift Logging](https://ericasadun.com/2015/05/22/swift-logging/)
@@ -194,10 +194,10 @@ essentially text streams. If you are using XCTest, take a look at
 
 - [`Pipe`](https://developer.apple.com/documentation/foundation/pipe)
 - [`FileHandle`](https://developer.apple.com/documentation/foundation/filehandle)
-   - [`readabilityHandler`](https://developer.apple.com/documentation/foundation/filehandle/1412413-readabilityhandler)
-   - [`availableData`](https://developer.apple.com/documentation/foundation/filehandle/1411463-availabledata)
-   - [`readDataToEndOfFile()`](https://developer.apple.com/documentation/foundation/filehandle/1411490-readdatatoendoffile)
-   - [`readData(ofLength:)`](https://developer.apple.com/documentation/foundation/filehandle/1413916-readdata)
+  - [`readabilityHandler`](https://developer.apple.com/documentation/foundation/filehandle/1412413-readabilityhandler)
+  - [`availableData`](https://developer.apple.com/documentation/foundation/filehandle/1411463-availabledata)
+  - [`readDataToEndOfFile()`](https://developer.apple.com/documentation/foundation/filehandle/1411490-readdatatoendoffile)
+  - [`readData(ofLength:)`](https://developer.apple.com/documentation/foundation/filehandle/1413916-readdata)
 - [`dup2()`](https://linux.die.net/man/2/dup2)
 - [`freopen()`](https://linux.die.net/man/3/freopen)
 - [`print(_:separator:terminator:)`](https://developer.apple.com/documentation/swift/1541053-print)
