@@ -30,6 +30,17 @@ architecture, build and development issues.
 
 ### Work Projects
 
+- Mobile Development Kit (MDK)
+  - suite of 20+ iOS and 10+ Android inner-source libraries
+  - used by dozens of apps for consumers (public app stores), clinicians and workforce (internal app store)
+  - e.g. authentication, security, analytics, environment config, test users
+- Mobile Delivery Pipeline
+  - continuous deployment for iOS and Android apps and libraries across Kaiser Permanente
+  - Jenkins Pipeline Shared library (Groovy) for a simple `Jenkinsfile` DSL
+  - custom Gradle plugin exposing standard tasks, simplifying configuration
+    and orchestrating the Android Gradle Plugin and Xcode
+  - macOS virtual machines configured using a recipe of scripts
+  - docs, samples, support and many presentations involving emoji, costumes and props
 - [Kaiser Permanente app](https://kpapp.org)
   - iOS & Android
   - our "flagship" app used by millions of our members
@@ -39,7 +50,7 @@ architecture, build and development issues.
   - retired in 2017
 - Firefly
   - iPad app for nurses and doctors to locate staff and equipment located throughout an ER
-  - used ultrasonic and RFID to track people and things, respectively
+  - used ultrasonic and RFID tags to track people and things, respectively
 
 ### Personal Projects
 
