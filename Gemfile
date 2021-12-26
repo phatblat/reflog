@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'kramdown'
+gem 'kramdown-syntax-coderay'
 gem 'coderay'
 gem 'webrick'
 
