@@ -8,20 +8,21 @@
 exclude: [Gemfile*, README.md, LICENSE.md, bin/*]
 
 # Site settings
-url: "http://phatbl.at" # the base hostname & protocol for your site
+url: http://phatbl.at # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
-title: "phatblat's reflog"
-description: > # this means to ignore newlines until "baseurl:"
+title: phatblat's reflog
+description: >- # this means to ignore newlines until "baseurl:"
   a few SHAs from a journey through code
 email: #ben@octop.ad
 author: Ben Chatelain
-simple_search: http://google.com/search
+simple_search: https://google.com/search
 twitter_username: phatblat
 github_username:  phatblat
 
 # Serving
 host: 0.0.0.0
 port: 4000
+open_url: http://localhost:4000
 
 # Default extension for new posts and pages
 post_ext: markdown
@@ -47,7 +48,11 @@ lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
 
+liquid:
+  error_mode: strict
+
 # Markdown Processors
+# https://jekyllrb.com/docs/configuration/markdown/
 # https://kramdown.gettalong.org/options.html
 kramdown:
   input:          GFM
@@ -57,8 +62,7 @@ kramdown:
   toc_levels:     1..6
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   coderay_line_numbers: nil
-
-syntax_highlighter: coderay
+  syntax_highlighter: coderay
 
 # Plugin settings
 jekyll-mentions:
