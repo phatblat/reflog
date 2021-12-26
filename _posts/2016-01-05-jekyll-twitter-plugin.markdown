@@ -32,15 +32,15 @@ Based on the tweet-tag plugin, the [jekyll-twitter-plugin](https://github.com/ro
 The syntax is very similar:
 
 ```liquid
-{{ "{% twitter https://twitter.com/DepressedDarth/status/683671063855759360 " }}%}
+{{ "{% twitter https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 " }}%}
 ```
 
-{% twitter https://twitter.com/DepressedDarth/status/683671063855759360 %}
+{% twitter https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 %}
 
 
 ### Ad Blockers
 
-Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery, you won't see the [Twitter Card](https://dev.twitter.com/cards/overview) version of these embedded tweets with images and they will instead fall back to a text-only version.
+Note: if you're blocking the "Twitter Button" tracker with a browser plugin like Ghostery, you won't see the [Twitter Card](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started) version of these embedded tweets with images and they will instead fall back to a text-only version.
 
 ![Ghostery Safari plugin showing Twitter tracker blocked](/images/ghostery-twitter-button.png)
 
@@ -50,10 +50,10 @@ Note: if you're blocking the "Twitter Button" tracker with a browser plugin like
 There are a few formatting options, such as `align` and `width`:
 
 ```liquid
-{{ "{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' " }}%}
+{{ "{% twitter https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 align='center' width='220' " }}%}
 ```
 
-{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 align='center' width='220' %}
+{% twitter https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 align='center' width='220' %}
 
 The `width` parameter must be between 220 and 550 inclusive and seems to have no effect on the text-only rendering of the tweet.
 
@@ -63,14 +63,16 @@ The `width` parameter must be between 220 and 550 inclusive and seems to have no
 This plugin will pass along any extra parameters like `hide_media` to the [oembed API](https://dev.twitter.com/rest/reference/get/statuses/oembed) for further customization.
 
 ```liquid
-{{ "{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' " }}%}
+{{ "{% twitter https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 hide_media='true' " }}%}
 ```
 
-{% twitter https://twitter.com/DepressedDarth/status/684318431227727872 hide_media='true' %}
+{% twitter https://twitter.com/DEVOPS_BORAT/statuses/159849628819402752 hide_media='true' %}
 
 Text rendering of the tweet is unaffected by `hide_media` because it only includes a link by default.
 
 ## Configuration
+
+> Note: Since version 2.0.0 these Authentication & API keys are no longer needed.
 
 There are two options for configuring this Twitter plugin with your authentication keys:
 
@@ -79,7 +81,7 @@ There are two options for configuring this Twitter plugin with your authenticati
 
 Since I'm tracking my `_config.yml` in git, shared publicly on GitHub, I'm opting for #2.
 
-The challenge with environment variables is making sure they are defined whenever you need to run the command that depends on them. A simple solution is to add them to your `.bash_profile` or `.zshrc`, but since I'm _also_ [storing that on GitHub](https://github.com/phatblat/dotfiles/blob/master/.zshrc), I'm going to look for another option.
+The challenge with environment variables is making sure they are defined whenever you need to run the command that depends on them. A simple solution is to add them to your `.bash_profile` or `.zshrc`, but since I'm _also_ [storing that on GitHub](https://github.com/phatblat/dotfiles/blob/main/.zshrc), I'm going to look for another option.
 
 ## .env File
 
@@ -98,7 +100,7 @@ The values in this file are then loaded into the environment for the Jekyll proc
 env $(cat .env | xargs) bundle exec jekyll serve
 ```
 
-This is wrapped up neatly in a [`serve`](https://github.com/phatblat/dotfiles/blob/89dace6e7f9230e0b7f3ded261172f6bf7af2317/.dotfiles/www/octopress.zsh#L28) alias so I don't have to type (or remember) all that each time.
+This is wrapped up neatly in a [`serve`](https://github.com/phatblat/dotfiles/blob/main/.config/fish/functions/serve.fish#L10) alias so I don't have to type (or remember) all that each time.
 
 One caveat is that this command now generates an error if there is not an `.env` file in the current directory. I like that because I'm frequently in the wrong directory when I type `serve` and Jekyll is happy to create `_site` folders wherever I happen to be before blowing up in my face.
 
