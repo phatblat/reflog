@@ -21,7 +21,7 @@ twitter_username: phatblat
 github_username:  phatblat
 
 # Serving
-host: 0.0.0.0
+host: localhost
 port: 4000
 open_url: http://localhost:4000
 
