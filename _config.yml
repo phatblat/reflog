@@ -9,7 +9,7 @@ exclude: [Gemfile*, README.md, LICENSE.md, bin/*]
 keep_files: [.git, .nojekyll, .well-known/apple-app-site-association.json]
 
 # Site settings
-url: http://phatbl.at # the base hostname & protocol for your site
+url: https://phatbl.at # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 title: phatblat's reflog
 description: >- # this means to ignore newlines until "baseurl:"
