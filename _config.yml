@@ -6,6 +6,7 @@
 #
 
 exclude: [Gemfile*, README.md, LICENSE.md, bin/*]
+keep_files: [.git, .nojekyll, .well-known/apple-app-site-association.json]
 
 # Site settings
 url: http://phatbl.at # the base hostname & protocol for your site
