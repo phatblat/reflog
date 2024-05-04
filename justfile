@@ -10,3 +10,6 @@ format:
 install:
     brew bundle install
     bundle install
+
+serve:
+    bundle exec jekyll serve --livereload
