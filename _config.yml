@@ -5,7 +5,7 @@
 # Jekyll configuration - https://jekyllrb.com/docs/configuration/
 #
 
-exclude: [Gemfile*, README.md, LICENSE.md, bin/*]
+exclude: [bin/*, Brewfile*, Gemfile*, justfile, README.md, LICENSE.md]
 keep_files: [.git, .nojekyll, .well-known/apple-app-site-association.json]
 
 # Site settings
