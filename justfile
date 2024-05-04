@@ -15,4 +15,4 @@ serve:
     bundle exec jekyll serve --livereload
 
 build:
-    bundle exec jekyll build
+    bundle exec jekyll build --destination ../reflog-static
