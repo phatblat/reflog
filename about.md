@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Hello there. I'm Ben Chatelain and this is my reflog.
-You'll find me as [`@phatblat`](https://twitter.com/phatblat) on all the things.
+You'll find me as [`@phatblat`](https://twitter.com/phatblat) across the interwebs.
 
 ## Apple Wallet Pass
 
@@ -19,65 +19,24 @@ If you are interested in making your own, grab the source of this pass from my
 
 ## Work
 
-I work for [Kaiser Permanente](http://kp.org) in the Mobility Center of Excellence.
-My team maintains a suite of reusable libraries that are used in
-many internal and external iOS and Android apps.
-We provide an internal DevOps solution called the Mobile Delivery Pipeline,
-which includes a custom Gradle plugin (100% Kotlin), a Jenkins Shared Library,
-and tailored macOS VM image.
-I also consult with various development teams across our company on mobile app
-architecture, build and development issues.
+I'm a multiplatform SDK engineer, working for [Ditto](https://ditto.live/) on the SDK team.
+I lead development on our Android SDK and contribute to our other SDKs.
 
 ### Work Projects
 
-- Mobile Development Kit (MDK)
-  - suite of 20+ iOS and 10+ Android inner-source libraries
-  - used by dozens of apps for consumers (public app stores), clinicians and workforce (internal app store)
-  - e.g. authentication, security, analytics, environment config, test users
-- Mobile Delivery Pipeline
-  - continuous deployment for iOS and Android apps and libraries across Kaiser Permanente
-  - Jenkins Pipeline Shared library (Groovy) for a simple `Jenkinsfile` DSL
-  - custom Gradle plugin exposing standard tasks, simplifying configuration
-    and orchestrating the Android Gradle Plugin and Xcode
-  - macOS virtual machines configured using a recipe of scripts
-  - docs, samples, support and many presentations involving emoji, costumes and props
-- [Kaiser Permanente app](https://kpapp.org)
-  - iOS & Android
-  - our "flagship" app used by millions of our members
-- [Every Body Walk!](http://everybodywalk.org)
-  - iOS & Android
-  - our first Apple Watch app
-  - retired in 2017
-- Firefly
-  - iPad app for nurses and doctors to locate staff and equipment located throughout an ER
-  - used ultrasonic and RFID tags to track people and things, respectively
+- I created a [swift package](https://github.com/getditto/DittoSwiftPackage) for our Apple SDKs.
+- I split out a JVM SDK from our Android SDK, but we decided not to ship it.
+- I added initial support for Xamarin.iOS to our .NET SDK.
+- I published our [C++ SDK for Android](https://docs.ditto.live/get-started/install-guides/cpp) to Maven Central.
+- I added [support for visionOS](https://github.com/getditto/DittoSwiftPackage/releases/tag/4.8.0-experimental-visionos-support) to our Swift SDK.
 
-### Personal Projects
+## Talks
 
-I'm a big (phat?) open source contributor and everything I can share is in a public
-repo on [GitHub](https://github.com/phatblat?tab=repositories). There are a lot of
-dead projects, but here are some of the more interesting ones.
-
-- My [dotfiles](https://github.com/phatblat/dotfiles), with a crazy amount of custom Fish Shell [functions](https://github.com/phatblat/dotfiles/tree/master/.config/fish/functions)
-- [powerline segment](https://github.com/phatblat/powerline-xcodeversion#readme)
-  displaying the currently selected version of Xcode
-- [Outlets](/2016/05/03/outlets-pod.html) - utility library for validating storyboard/xib connections
-- Gradle Plugins
-  - [ShellExec](https://github.com/phatblat/ShellExec#readme)
-  - [SwiftPM-Plugin](https://github.com/phatblat/SwiftPM-Plugin#readme)
-- [Tube](https://github.com/phatblat/Tube) - a generic, simple pipeline for Jenkins
-- [xcode-installer](https://github.com/phatblat/xcode-installer) - obsolete precursor to xcode-install
-
-### Open Source
-
-I'm a core contributor on some projects you may have heard of.
-
-- [mas](https://github.com/mas-cli/mas#readme) - Mac App Store command line
-- [Quick](https://github.com/Quick/Quick#readme) & [Nimble](https://github.com/Quick/Nimble#readme) - testing frameworks for Apple platforms
-- [ObjectiveGit](https://github.com/libgit2/objective-git#readme) - Objective-C bindings to libgit2
-- [SwiftGen](https://github.com/SwiftGen/SwiftGen#readme)
-- [Commandant](https://github.com/Carthage/Commandant#readme)
-- [octokit.swift](https://github.com/nerdishbynature/octokit.swift#readme)
+- [How to Quickly Build KMP Offline-First Applications That Supports Both Cloud and Local Peer-to-Peer](https://sf.droidcon.com/)
+- [Ditto - Peer-to-Peer Sync for Apps at Denver Droids](https://www.youtube.com/watch?v=dcX0R2rLYNY)
+  - this has become required onboarding for all new Ditto staff
+- [Gradle isn't just a Bad Word 🤬](https://vimeo.com/579588620)
+- [Level Up Your Git Commits with Gitmoji](https://vimeo.com/452644818)
 
 ## Blog
 
